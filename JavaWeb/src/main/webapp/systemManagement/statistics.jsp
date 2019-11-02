@@ -251,7 +251,7 @@
 <%--<div class="pusher">--%>
     <div class="ui fluid container">
 
-        <div class="ui column grid">
+        <div class="ui column grid" style="width: 100%; height: 100%;">
             <%--//订单统计--%>
             <div class="nine wide column">
 
@@ -443,7 +443,7 @@
 
             <%--//营收数据统计--%>
             <div class="nine wide column">
-                <div id="income" style="width: 108%;height:42%;"></div>
+                <div id="income" style="width: 108%;height:64%;"></div>
                 <script>
 
                     var incomeChart = echarts.init(document.getElementById("income"));
@@ -512,7 +512,7 @@
 
             <%--//酒店房间数据统计--%>
             <div class="seven wide column">
-                <div id="rooms" style="width:90%;height:38%;"></div>
+                <div id="rooms" style="width:90%;height:64%;"></div>
                 <script type="text/javascript">
 
                     var roomChart = echarts.init(document.getElementById("rooms"));

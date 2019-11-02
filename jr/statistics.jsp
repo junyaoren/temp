@@ -251,9 +251,9 @@
 <%--<div class="pusher">--%>
     <div class="ui fluid container">
 
-        <div class="ui column grid" style="width: 100%; height: 100%;">
+        <div class="ui column grid" style="width:auto;height: 100%;">
             <%--//订单统计--%>
-            <div class="nine wide column">
+            <div class="nine wide column" style="width:100%;height:100%;">
 
                 <%--<div id="ods" style="width: 520px;height:280px;"></div>--%>
                 <%--<script type="text/javascript">--%>
@@ -282,7 +282,7 @@
                     <%--// 使用刚指定的配置项和数据显示图表。--%>
                     <%--orderChart.setOption(waiterOption);--%>
                 <%--</script>--%>
-                <div id="weekTypeNum" style="width:100%;height:36%;"></div>
+                <div id="weekTypeNum" style="width:100%;height:100%;"></div>
 
                 <script>
                     var weekChart = echarts.init(document.getElementById("weekTypeNum"));
@@ -373,7 +373,7 @@
             </div>
             <%--//员工业绩统计--%>
             <div class="seven wide column">
-                <div id="waiter" style="width: 90%;height:36%;"></div>
+                <div id="waiter" style="width: 90%;height:100%;"></div>
                 <script>
 
                     var waiterChart = echarts.init(document.getElementById('waiter'));
@@ -443,7 +443,7 @@
 
             <%--//营收数据统计--%>
             <div class="nine wide column">
-                <div id="income" style="width: 108%;height:64%;"></div>
+                <div id="income" style="width: 108%;height:100%;"></div>
                 <script>
 
                     var incomeChart = echarts.init(document.getElementById("income"));
@@ -512,7 +512,7 @@
 
             <%--//酒店房间数据统计--%>
             <div class="seven wide column">
-                <div id="rooms" style="width:90%;height:64%;"></div>
+                <div id="rooms" style="width:90%;height:100%;"></div>
                 <script type="text/javascript">
 
                     var roomChart = echarts.init(document.getElementById("rooms"));
