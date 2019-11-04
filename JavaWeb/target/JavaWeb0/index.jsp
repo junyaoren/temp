@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>宾馆管理系统登录</title>
+  <title>Lab Equipment Reservation System</title>
   <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
   <script src="/semantic/dist/jquery.min.js"></script>
   <script src="/semantic/dist/semantic.js"></script>
@@ -11,7 +11,7 @@
 
 <style type="text/css">
   body {
-    background: url("/images/bg1.jpg");
+    background: url("/images/background.jpg");
     background-color: #DADADA;
   }
   body > .grid {
@@ -32,7 +32,7 @@
                     rules: [
                         {
                             type: 'regExp[/^[a-z0-9A-Z]{1,10}$/]',
-                            prompt: '用户名不符合规范！'
+                            prompt: 'Invalid username'
                         }
                     ]
                 },
@@ -41,7 +41,7 @@
                     rules: [
                         {
                             type: 'regExp[/^[a-z0-9A-Z]{1,10}$/]',
-                            prompt: '密码不符合规范'
+                            prompt: 'Invalid password'
                         }
                     ]
                 }
@@ -63,15 +63,15 @@
 <body>
 <div class="ui middle aligned center aligned grid">
   <div class="column">
-    <h1 class="ui blue header">宾馆管理系统登录</h1>
+    <h1 class="ui red header">Lab Equipment Reservation System</h1>
     <form class="ui large form" id="form1" method="post" action="/LoginServlet">
       <div class="ui form segment"  align="center">
         <%--<div class="field">--%>
         <%--<div class="ui dropdown">--%>
         <%--&lt;%&ndash;fluid search&ndash;%&gt;--%>
         <%--<select class="ui fluid search dropdown" name="admin">--%>
-        <%--<option value="0">系统admin</option>--%>
-        <%--<option value="1">宾馆admin</option>--%>
+        <%--<option value="0">admin</option>--%>
+        <%--<option value="1">admin</option>--%>
         <%--</select>--%>
         <%--</div>--%>
         <%--</div>--%>
@@ -83,26 +83,26 @@
             <div class="field" align="center">
               <div class="ui radio checkbox">
                 <input type="radio" name="admin" value="0" checked="checked">
-                <label><i class="user icon"></i>系统管理员</label>
+                <label><i class="user icon"></i>Lab Admin</label>
               </div>
             </div>
             <div class="field">
               <div class="ui radio checkbox">
                 <input type="radio" name="admin" value="1">
-                <label><i class="users icon"></i>宾馆管理员</label>
+                <label><i class="users icon"></i>Equip Manager</label>
               </div>
             </div>
           </div>
           <div class="field">
             <div class="ui left icon input">
               <i class="user icon"></i>
-              <input type="text" id="id" name="id" placeholder="用户名">
+              <input type="text" id="id" name="id" placeholder="username">
             </div>
           </div>
           <div class="field">
             <div class="ui left icon input">
               <i class="lock icon"></i>
-              <input type="password" id="password" name="password" placeholder="密码">
+              <input type="password" id="password" name="password" placeholder="password">
             </div>
           </div>
           <div >
