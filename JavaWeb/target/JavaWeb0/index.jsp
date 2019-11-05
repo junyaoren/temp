@@ -93,16 +93,19 @@
               </div>
             </div>
           </div>
+
+          <p>(For test purpose, you can directly login with admin)</p>
+
           <div class="field">
             <div class="ui left icon input">
               <i class="user icon"></i>
-              <input type="text" id="id" name="id" placeholder="username">
+              <input type="text" id="id" name="id" placeholder="username" value="admin">
             </div>
           </div>
           <div class="field">
             <div class="ui left icon input">
               <i class="lock icon"></i>
-              <input type="password" id="password" name="password" placeholder="password">
+              <input type="password" id="password" name="password" placeholder="password" value="admin">
             </div>
           </div>
           <div >
