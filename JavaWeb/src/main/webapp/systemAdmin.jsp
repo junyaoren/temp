@@ -7,7 +7,7 @@
 
 <%
     if (session.getAttribute("systemadmin") == null) {
-        response.sendRedirect("/index.jsp");
+        response.sendRedirect("./index.jsp");
     }
 
 //    String sn = request.getSession().getAttribute("systemadmin").toString();
@@ -24,22 +24,22 @@
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="0">
     <title>Lab Equipment Reservation System</title>
-    <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
-    <script src="/semantic/dist/jquery.min.js"></script>
-    <script src="/semantic/dist/semantic.js"></script>
-    <link rel="stylesheet" type="text/css" href="/semantic/dist/components/reset.css">
-    <link rel="stylesheet" type="text/css" href="/semantic/dist/components/site.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+    <script src="../semantic/dist/jquery.min.js"></script>
+    <script src="../semantic/dist/semantic.js"></script>
+    <link rel="stylesheet" type="text/css" href="../semantic/dist/components/reset.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/dist/components/site.css">
 
-    <link rel="stylesheet" type="text/css" href="/semantic/dist/components/container.css">
-    <link rel="stylesheet" type="text/css" href="/semantic/dist/components/divider.css">
-    <link rel="stylesheet" type="text/css" href="/semantic/dist/components/grid.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/dist/components/container.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/dist/components/divider.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/dist/components/grid.css">
 
-    <link rel="stylesheet" type="text/css" href="/semantic/dist/components/header.css">
-    <link rel="stylesheet" type="text/css" href="/semantic/dist/components/segment.css">
-    <link rel="stylesheet" type="text/css" href="/semantic/dist/components/table.css">
-    <link rel="stylesheet" type="text/css" href="/semantic/dist/components/icon.css">
-    <link rel="stylesheet" type="text/css" href="/semantic/dist/components/menu.css">
-    <link rel="stylesheet" type="text/css" href="/semantic/dist/components/message.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/dist/components/header.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/dist/components/segment.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/dist/components/table.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/dist/components/icon.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/dist/components/menu.css">
+    <link rel="stylesheet" type="text/css" href="../semantic/dist/components/message.css">
 
     <style type="text/css">
         h2 {
@@ -68,6 +68,7 @@
         }
         setInterval(myDate,1000);
     </script>
+</head>
 
 <body>
 <div class="pusher">

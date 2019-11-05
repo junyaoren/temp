@@ -70,12 +70,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Lab Equipment Reservation System</title>
-    <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
-    <script src="/semantic/dist/jquery.min.js"></script>
-    <script src="/semantic/dist/semantic.js"></script>
-    <script src="/echarts/echarts.js"></script>
+    <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+    <script src="../semantic/dist/jquery.min.js"></script>
+    <script src="../semantic/dist/semantic.js"></script>
+    <script src="../echarts/echarts.js"></script>
 </head>
-<%@include file="/systemAdmin.jsp"%>
+<%@include file="../systemAdmin.jsp"%>
 <body>
 
 <div class="pusher">
