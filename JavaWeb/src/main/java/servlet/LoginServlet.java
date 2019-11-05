@@ -45,7 +45,7 @@ public class LoginServlet extends HttpServlet {
                 //登陆成功
                 HttpSession session = request.getSession();
                 if(admin.equals("1")) {
-                    System.out.println("正在进入宾馆管理界面");
+                    System.out.println("Entering Lab Member Page...");
 
                     Connection connection =null ;
                     session.setAttribute("hoteladmin",userid);
@@ -56,10 +56,10 @@ public class LoginServlet extends HttpServlet {
                             GCON.HOTELUSERNAME, GCON.HOTELPASSWORD);
                     GCON.status =0 ;
                     DataBase.setConnection(connection);
-                    response.sendRedirect("/roomOrder.jsp?op=1");
+                    response.sendRedirect("./roomOrder.jsp?op=1");
 
                 } else {
-                    System.out.println("正在进入系统管理页面");
+                    System.out.println("Entering System Admin Page...");
 
                     session.setAttribute("systemadmin",userid);
                     session.setAttribute("systempassword",userpassword);
@@ -69,14 +69,14 @@ public class LoginServlet extends HttpServlet {
                             GCON.SYSTEMUSERNAME ,GCON.SYSTEMPASSWORD) ;
                     GCON.status =1 ;
                     DataBase.setConnection(connection);
-                    response.sendRedirect("/systemManagement/waiterShow.jsp?mop=7");
+                    response.sendRedirect("./systemManagement/statistics.jsp?mop=10");
                 }
 
 
             }
             else {
-                request.getSession().setAttribute("error","账号和密码不匹配!");
-                response.sendRedirect("/index.jsp");
+                request.getSession().setAttribute("error","Invalid username/password match!");
+                response.sendRedirect("./index.jsp");
             }
         } catch (Exception e) {
             e.printStackTrace();

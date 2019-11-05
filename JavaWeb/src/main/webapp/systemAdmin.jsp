@@ -23,7 +23,7 @@
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="0">
-    <title>宾馆管理系统</title>
+    <title>Lab Equipment Reservation System</title>
     <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
     <script src="/semantic/dist/jquery.min.js"></script>
     <script src="/semantic/dist/semantic.js"></script>
@@ -60,7 +60,7 @@
             var hours=now.getHours();
             var minutes=now.getMinutes();
             var seconds=now.getSeconds();
-            document.getElementById("div").innerHTML=year+"年"+fix(month, 2)+"月"+fix(day, 2)+"日"+fix(hours, 2)+" : "+fix(minutes, 2)+" : "+fix(seconds, 2);
+            document.getElementById("div").innerHTML=year+"-"+fix(month, 2)+"-"+fix(day, 2)+"-"+fix(hours, 2)+" : "+fix(minutes, 2)+" : "+fix(seconds, 2);
         }
 
         function fix(num, length) {
@@ -74,19 +74,19 @@
     <div class="ui  inverted menu">
         <a class="item"href="/AdministrationManage?mop=7">
             <i class="sitemap icon"></i>
-            管理员树图
+            Tree Map of Lab Members
         </a>
         <div class="ui simple dropdown item">
-            <i class="users icon"></i>管理
+            <i class="users icon"></i>Manage Members
             <i class="dropdown icon"></i>
             <div class="menu">
-                <a class="item" href="/AdministrationManage?mop=4"><i class="add user icon"></i>新增员工</a>
-                <a class="item" href="/AdministrationManage?mop=5"><i class="edit icon"></i>编辑员工</a>
+                <a class="item" href="/AdministrationManage?mop=4"><i class="add user icon"></i>Add New Lab Member</a>
+                <a class="item" href="/AdministrationManage?mop=5"><i class="edit icon"></i>Edit Lab Member</a>
             </div>
         </div>
 
         <a class="item" href="/AdministrationManage?mop=10">
-            <i class="bar chart icon"></i>业务数据统计
+            <i class="bar chart icon"></i>Reservation Statistics
         </a>
 
         <div class="right menu">
@@ -99,11 +99,11 @@
         <div class="right menu">
             <div class="ui simple dropdown item">
                 <i class="user icon"></i>
-                <%="系统管理员: " + session.getAttribute("systemadmin")%>
+                <%="SystemAdmin: " + session.getAttribute("systemadmin")%>
 
                 <i class="dropdown icon"></i>
                 <div class="menu">
-                    <a class="item" href="/ServiceManage?op=10"><i class="sign out icon"></i>注销</a>
+                    <a class="item" href="/ServiceManage?op=10"><i class="sign out icon"></i>Logout</a>
                 </div>
             </div>
         </div>

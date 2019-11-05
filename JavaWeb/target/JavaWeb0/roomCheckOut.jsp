@@ -18,7 +18,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>宾馆管理系统</title>
+    <title>Lab Equipment Reservation System</title>
     <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
     <script src="/semantic/dist/jquery.min.js"></script>
     <script src="/semantic/dist/semantic.js"></script>

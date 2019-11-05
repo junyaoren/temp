@@ -29,7 +29,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>宾馆管理系统</title>
+    <title>Lab Equipment Reservation System</title>
     <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
     <script src="/semantic/dist/jquery.min.js"></script>
     <script src="/semantic/dist/semantic.js"></script>
@@ -78,7 +78,7 @@
         }
 
         function returnm() {
-            window.location.href="/systemManagement/waiterEdit.jsp"
+            window.location.href="/systemManagement/editMember.jsp"
         }
 
     </script>
@@ -97,21 +97,21 @@
                     <div class="<%=(mop<=4)?"active step ":"completed step"%>" >
                         <i class="add user icon"></i>
                         <div class="content">
-                            <div class="title">编辑信息填写</div>
+                            <div class="title">Edit Member</div>
                         </div>
                     </div>
 
                     <div class="<%=(mop==5)?"active step":(mop==6)?"completed step":"step"%>">
                         <i class="adjust icon"></i>
                         <div class="content">
-                            <div class="title">编辑信息确认</div>
+                            <div class="title">Edit Confirmation</div>
                         </div>
                     </div>
 
                     <div class="<%=(mop==6)?"active step ":"step"%>">
                         <i class="minus icon"></i>
                         <div class="content">
-                            <div class="title">编辑信息提交</div>
+                            <div class="title">Submit</div>
                         </div>
                     </div>
                 </div>
@@ -123,19 +123,19 @@
                 <form class="ui form" onsubmit="return sub1(this)">
                     <div class="two fields">
                         <div class="field">
-                            <label>工号</label>
-                            <input type="text" id="waiterID" name="waiterID" value="<%=(waiter==null)?"":waiter.getWaiterID()%>" placeholder="工号" readonly="true">
+                            <label>Member ID</label>
+                            <input type="text" id="waiterID" name="waiterID" value="<%=(waiter==null)?"":waiter.getWaiterID()%>" placeholder="Member ID" readonly="true">
                         </div>
                     </div>
                     <div class="two fields">
                         <div class="field">
-                            <label>姓名</label>
-                            <input type="text" id="waiterName" name="waiterName" value="<%=(waiter==null)?"":waiter.getWaiterName()%>" placeholder="姓名">
+                            <label>Name</label>
+                            <input type="text" id="waiterName" name="waiterName" value="<%=(waiter==null)?"":waiter.getWaiterName()%>" placeholder="Name">
                         </div>
                     </div>
                     <div class="four fields">
                         <div class="six wide field">
-                            <label>出生日期</label>
+                            <label>Birthday</label>
                             <%SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
                                 java.util.Date date = format.parse(waiter.getWaiterBirthday().toString());
                                 Date sDate = new Date(date.getTime());
@@ -146,19 +146,19 @@
                     </div>
                     <div class="two fields">
                         <div class=" field">
-                            <label>身份证</label>
-                            <input type="text" id="waiterIDCard" name="waiterIDCard" value="<%=(waiter==null)?"":waiter.getWaiterIDCard()%>"  placeholder="身份证">
+                            <label>CampusID</label>
+                            <input type="text" id="waiterIDCard" name="waiterIDCard" value="<%=(waiter==null)?"":waiter.getWaiterIDCard()%>"  placeholder="CampusID">
                         </div>
                     </div>
                     <div class="two fields">
                         <div class="field">
-                            <label>密码</label>
-                            <input type="text" id="waiterPassword" value="<%=(waiter==null)?"":waiter.getWaiterPassword()%>"  placeholder="密码">
+                            <label>Password</label>
+                            <input type="text" id="waiterPassword" value="<%=(waiter==null)?"":waiter.getWaiterPassword()%>"  placeholder="Password">
                         </div>
                     </div>
                     <div class="four fields">
                         <div class="six wide field">
-                            <label>加入日期</label>
+                            <label>Join Date</label>
                             <%
                                 java.util.Date jdate = format.parse(waiter.getWaiterJoinDate().toString());
                                 Date JDate = new Date(jdate.getTime());
@@ -170,21 +170,21 @@
                     </div>
                     <div class="two fields">
                         <div class="field">
-                            <label>手机号</label>
-                            <input type="text" id="waiterPhoneNumber" name="waiterPhoneNumber" value="<%=(waiter==null)?"":waiter.getWaiterPhoneNumber()%>" placeholder="手机号">
+                            <label>Phone Number</label>
+                            <input type="text" id="waiterPhoneNumber" name="waiterPhoneNumber" value="<%=(waiter==null)?"":waiter.getWaiterPhoneNumber()%>" placeholder="Phone Number">
                         </div>
                     </div>
                     <div class="two fields">
                         <div class="field">
-                            <label>备注</label>
-                            <input type="text" id="remarks" value="<%=(waiter==null)?"":waiter.getRemarks()%>" placeholder="备注">
+                            <label>Notes</label>
+                            <input type="text" id="remarks" value="<%=(waiter==null)?"":waiter.getRemarks()%>" placeholder="Notes">
                         </div>
                     </div>
-                    <div class="ui right submit floated button" tabindex="0" >提交</div>
+                    <div class="ui right submit floated button" tabindex="0" >Submit</div>
                 </form>
                 <%} else if (mop == 5) {%>
 
-                <h2 class="ui dividing header">待编辑员工信息确认</h2>
+                <h2 class="ui dividing header">Confirm Information Modification</h2>
                 <form class="ui form">
                     <table class="ui table">
                         <%--<thead>--%>
@@ -256,9 +256,9 @@
 //                    out.print(waiter.getRemarks());
                     Query.editWaiter(waiter);
                 %>
-                <h2 class="ui diving heade">修改成功</h2>
+                <h2 class="ui diving heade">Successfully Edited</h2>
 
-                <div class="ui right button" onClick="returnm()">返回</div>
+                <div class="ui right button" onClick="returnm()">Return</div>
                 <%}%>
 
             </div>
@@ -280,7 +280,7 @@
                     rules: [
                         {
                             type: 'regExp[/^[a-z0-9A-Z]{1,10}$/]',
-                            prompt: 'ID不符合规范'
+                            prompt: 'Invalid member ID'
                         }
                     ]
                 }
@@ -288,16 +288,16 @@
                     identifier: 'waiterIDCard',
                     rules: [
                         {
-                            type: 'regExp[/^[0-9]{17}[0-9|X]$/]',
-                            prompt: '身份证号不符合规范'
+                            type: 'regExp[/.*/]',
+                            prompt: 'Invalid CampusID'
                         }
                     ]
                 },waiterPassword: {
                     identifier: 'waiterPassword',
                     rules: [
                         {
-                            type: 'regExp[/^[a-z0-9A-Z]{1,18}$/]',
-                            prompt: '密码不符合规范'
+                            type: 'regExp[/.*/]',
+                            prompt: 'Invalid Password'
                         }
                     ]
                 }
@@ -306,8 +306,8 @@
                     identifier: 'waiterPhoneNumber',
                     rules: [
                         {
-                            type: 'regExp[/^1[3|4|5|8][0-9]\\d{4,8}$/]',
-                            prompt: '手机号不符合规范'
+                            type: 'regExp[/.*/]',
+                            prompt: 'Invalid Phone Number'
                         }
                     ]
                 }

@@ -26,7 +26,7 @@
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="0">
-    <title>宾馆管理系统</title>
+    <title>Lab Equipment Reservation System</title>
     <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
     <script src="/semantic/dist/jquery.min.js"></script>
     <script src="/semantic/dist/semantic.js"></script>

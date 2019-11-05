@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Lab Equipment Reservation System</title>
-  <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
-  <script src="/semantic/dist/jquery.min.js"></script>
-  <script src="/semantic/dist/semantic.js"></script>
+  <link rel="stylesheet" type="text/css" href="./semantic/dist/semantic.min.css">
+  <script src="./semantic/dist/jquery.min.js"></script>
+  <script src="./semantic/dist/semantic.js"></script>
 </head>
 
 <style type="text/css">
   body {
-    background: url("/images/background.jpg");
+    background: url("./images/background.jpg");
     background-color: #DADADA;
   }
   body > .grid {
@@ -64,7 +64,7 @@
 <div class="ui middle aligned center aligned grid">
   <div class="column">
     <h1 class="ui red header">Lab Equipment Reservation System</h1>
-    <form class="ui large form" id="form1" method="post" action="/LoginServlet">
+    <form class="ui large form" id="form1" method="post" action="./LoginServlet">
       <div class="ui form segment"  align="center">
         <%--<div class="field">--%>
         <%--<div class="ui dropdown">--%>
@@ -107,7 +107,7 @@
           </div>
           <div >
             <%--<input   onclick="fun()" value="登录" class="ui primary button">--%>
-            <input  type="submit"  value="登录" class="ui fluid large blue submit button">
+            <input  type="submit"  value="Login" class="ui fluid large blue submit button">
             <%--<div class="ui fluid large button">登录</div>--%>
           </div>
         </div>

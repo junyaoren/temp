@@ -17,7 +17,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%
-    //预定订单数量
+    //Reservation Quantity
     int bookedOrderNumber = 0;
     //入住订单数量
     int checkInOrderNumber = 0;
@@ -43,11 +43,17 @@
 
     ArrayList<String> weekRoomType = new ArrayList<String>();
 
-    weekRoomType.add("商务间(单人/双人)");
-    weekRoomType.add("大床房(单人/双人)");
-    weekRoomType.add("标准间(单人)");
-    weekRoomType.add("标准间(双人)");
-    weekRoomType.add("高档套房(单人/双人)");
+//    weekRoomType.add("商务间(单人/双人)");
+//    weekRoomType.add("大床房(单人/双人)");
+//    weekRoomType.add("标准间(单人)");
+//    weekRoomType.add("标准间(双人)");
+//    weekRoomType.add("高档套房(单人/双人)");
+
+    weekRoomType.add("Ultra-Centrifuge");
+    weekRoomType.add("Fluorescent Microscope");
+    weekRoomType.add("Class-III Tissue Culture Room");
+    weekRoomType.add("Nanodrop");
+    weekRoomType.add("Real-time PCR Machine");
     //获取所有的订单，view根据视图倒序排列
     ArrayList<OrderView> weekView = Query.getAllOrderViews("");
 
@@ -208,13 +214,13 @@
     for (String key : incomeDatas.keySet()) {
         xincomeDate.add("'" + key + "'");
         incomeOrders.add(incomeDatas.get(key).getCheckOutNumber());
-        incomeMoney.add(incomeDatas.get(key).getAllPrice());
+        incomeMoney.add(incomeDatas.get(key).getAllPrice() / 16);
     }
 %>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>业务数据统计</title>
+    <title>Reservation Statistics</title>
     <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
     <script src="/semantic/dist/jquery.min.js"></script>
     <script src="/semantic/dist/semantic.js"></script>
@@ -371,7 +377,7 @@
                 </script>
 
             </div>
-            <%--//员工业绩统计--%>
+            <%--//Member Reservation Time--%>
             <div class="seven wide column">
                 <div id="waiter" style="width: 90%;height:36%;"></div>
                 <script>
@@ -381,13 +387,13 @@
 
                     waiterOption = {
                         title : {
-                            text: '员工业绩统计',
-                            subtext: '处理订单数量',
+                            text: 'Reservation Time Statistics',
+                            subtext: 'Number of reservations',
                             x:'left'
                         },
                         tooltip : {
                             trigger: 'item',
-                            formatter: "{a} : {b} <br/> 处理订单量 : {c} ({d}%)"
+                            formatter: "{a} : {b} <br/> # (%) : {c} ({d}%)"
                         },
                         legend: {
                             type: 'scroll',
@@ -399,7 +405,7 @@
                         },
                         series : [
                             {
-                                name: '姓名',
+                                name: 'Name',
                                 type: 'pie',
                                 radius : '55%',
                                 center: ['40%', '50%'],
@@ -467,11 +473,11 @@
                         }],
                         title: [{
                             left: 'center',
-                            text: '每日退房订单量'
+                            text: 'Daily Reservation Number'
                         }, {
                             top: '55%',
                             left: 'center',
-                            text: '每日营业额'
+                            text: 'Daily Total Reservation Time'
                         }],
                         tooltip: {
                             trigger: 'axis'
@@ -519,7 +525,7 @@
 
                     roomOption = {
                         title : {
-                            text: '房间统计'
+                            text: 'Equipment Usage Statistics'
                         },
                         tooltip : {
                             trigger: 'axis',
@@ -528,7 +534,7 @@
                             }
                         },
                         legend: {
-                            data: ['空房', '非空房']
+                            data: ['Reservation Completed', 'Reservation Abandoned']
                         },
                         grid: {
                             left: '3%',
