@@ -51,7 +51,7 @@
 
     weekRoomType.add("Ultra-Centrifuge");
     weekRoomType.add("Fluorescent Microscope");
-    weekRoomType.add("Class-III Tissue Culture Room");
+    weekRoomType.add("Class-III Tissue Culture");
     weekRoomType.add("Nanodrop");
     weekRoomType.add("Real-time PCR Machine");
     //获取所有的订单，view根据视图倒序排列
@@ -551,7 +551,7 @@
                         },
                         series: [
                             {
-                                name: '空房',
+                                name: 'Completed',
                                 type: 'bar',
                                 stack: '总量',
                                 label: {
@@ -563,7 +563,7 @@
                                 data: <%=roomNumEmpty%>
                             },
                             {
-                                name: '非空房',
+                                name: 'Abandoned',
                                 type: 'bar',
                                 stack: '总量',
                                 label: {
