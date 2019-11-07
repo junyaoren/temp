@@ -6,7 +6,14 @@ public class GCON {
     //数据库连接信息
     public static final String DRIVER = "com.mysql.cj.jdbc.Driver";
 
-    public static final String URL = "jdbc:mysql://127.0.0.1:3306/new?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+    public static final String URL = "jdbc:mysql://127.0.0.1:3306/new?" +
+            "useUnicode=true" +
+            "&useJDBCCompliantTimezoneShift=true" +
+            "&useLegacyDatetimeCode=false" +
+            "&serverTimezone=UTC" +
+            "&testOnBorrow=true" +
+            "&removeAbandoned=true" +
+            "&testOnReturn=true";
 
     //登录时默认使用system用户验证登录名与密码是否正确
     public static  String USERNAME = "system";
