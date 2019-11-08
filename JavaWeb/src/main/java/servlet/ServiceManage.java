@@ -37,9 +37,9 @@ public class ServiceManage extends HttpServlet {
 //        String[] values =map.get("op") ; // op=1 /2 /3
 //        int op = Integer.parseInt( values[0] ) ;
 //        if(op==1){
-//            response.sendRedirect("/roomOrder.jsp?op=1");
+//            response.sendRedirect("/equipReserve.jsp?op=1");
 //        }else if(op==2) {
-//            response.sendRedirect("/roomRenew.jsp?op=1");
+//            response.sendRedirect("/extendReservation.jsp?op=1");
 //        }else if(op==3){
 //            response.sendRedirect("/roomCheckOut.jsp?op=1");
 //        }
@@ -57,37 +57,38 @@ public class ServiceManage extends HttpServlet {
             String id = map.get("idcard")[0].toString() ;
             //用户登记  查询折扣
             //根据身份证查询用户是否存在
-            Double discount ;
+            // Double discount ;
 
-            if(isIDexists(id)){
-                //老客户
-                System.out.println(id+"存在,是老客户");
-                discount= searchDiscount(id) ;
-                System.out.println("折扣是"+discount);
-            }else {
-                //新客户
-                System.out.println(id+"不存在,是新客户");
+//            if(isIDexists(id)){
+//                //老客户
+//                System.out.println(id+"存在,是老客户");
+//                discount= searchDiscount(id) ;
+//                System.out.println("折扣是"+discount);
+//            }else {
+//                //新客户
+//                System.out.println(id+"不存在,是新客户");
+//
+//                StringTokenizer st=new StringTokenizer(map.get("birthdata")[0],"-");
+//                //添加客户
+//                Customer cu = null;
+//                try {
+//                    cu = new Customer(id,map.get("sex")[0],map.get("name")[0]
+//                            ,new java.sql.Date(new SimpleDateFormat("yyyy-MM-dd").parse(map.get("birthdata")[0]).getTime()),new Integer(1).toString(),map.get("phonenumber")[0],
+//                            0,"");
+//                } catch (ParseException e) {
+//                    e.printStackTrace();
+//                }
+//                addCustomer(cu) ;
+//                discount = searchDiscount(id) ;
+//                System.out.println("折扣是"+discount);
+//            }
+//            String url ="/equipReserve.jsp?op=3&discount="+discount.toString()+"&price="+getPrice(map.get("equipType")[0])
+//                    +"&pay="+getPrice(map.get("roomtype")[0])*Integer.parseInt(map.get("time")[0])*discount;
 
-                StringTokenizer st=new StringTokenizer(map.get("birthdata")[0],"-");
-                //添加客户
-                Customer cu = null;
-                try {
-                    cu = new Customer(id,map.get("sex")[0],map.get("name")[0]
-                            ,new java.sql.Date(new SimpleDateFormat("yyyy-MM-dd").parse(map.get("birthdata")[0]).getTime()),new Integer(1).toString(),map.get("phonenumber")[0],
-                            0,"");
-                } catch (ParseException e) {
-                    e.printStackTrace();
-                }
-                addCustomer(cu) ;
-                discount = searchDiscount(id) ;
-                System.out.println("折扣是"+discount);
-            }
-            String url ="/roomOrder.jsp?op=3&discount="+discount.toString()+"&price="+getPrice(map.get("roomtype")[0])
-                    +"&pay="+getPrice(map.get("roomtype")[0])*Integer.parseInt(map.get("time")[0])*discount;
+            String url ="/equipReserve.jsp?op=3&";
             HashSet<String> set =new HashSet<String>() ;
-            set.add("roomtype") ;
+            set.add("equipType") ;
             set.add("name") ;
-            set.add("sex") ;
             for(String key : map.keySet()){
                 if(!key.equals("op")){
                     if(set.contains(key))
@@ -99,7 +100,7 @@ public class ServiceManage extends HttpServlet {
             response.sendRedirect(url);
         }else if(op==2){
             //注销当前的登录用户  ;
-            request.getSession().removeAttribute("hoteladmin");
+            request.getSession().removeAttribute("labmember");
             response.sendRedirect("/index.jsp");
         }
         else if(op==3){
@@ -127,10 +128,10 @@ public class ServiceManage extends HttpServlet {
             System.out.println(date1);
 
             Order order =new Order(orderNumber,"已入住",map.get("idcard")[0],
-                    map.get("roomid")[0],date,date1, (int)Double.parseDouble(map.get("pay")[0]) ,request.getSession().getAttribute("hoteladmin").toString(),
-                    "",date) ;
+                    map.get("equipmentID")[0], date, date1, 100,request.getSession().getAttribute("labmember").toString(),
+                    "", date) ;
             insertOrder(order);
-            response.sendRedirect("/roomOrder.jsp?op=4") ;
+            response.sendRedirect("/equipReserve.jsp?op=4") ;
         }
         else if(op==4){
             // 续费
@@ -144,7 +145,7 @@ public class ServiceManage extends HttpServlet {
             //修改相应的order日期 ;
             Date newdate = renew.getNewExpiryDate() ;
             updateNewDate(newdate,renew.getOrderNumber()) ;
-            response.sendRedirect("/roomOrder.jsp?op=1") ;
+            response.sendRedirect("/equipReserve.jsp?op=1") ;
         }
         else if(op==5){
             //退房
@@ -152,7 +153,7 @@ public class ServiceManage extends HttpServlet {
 //            System.out.println("订单:"+orderNumber);
 //            checkOutRoom(orderNumber) ;
 //            System.out.println("退房成功");
-//            response.sendRedirect("/hotelAdmin.jsp") ;
+//            response.sendRedirect("/labMember.jsp") ;
         } else if (op == 10) {
             //注销当前管理员用户
             request.getSession().removeAttribute("systemadmin");

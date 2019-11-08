@@ -83,7 +83,7 @@
 
 </head>
 
-<%@include file="/hotelAdmin.jsp"%>
+<%@include file="/labMember.jsp"%>
 <body>
 
 <div class="pusher">
@@ -177,7 +177,7 @@
                             </div>
                             <div class="extra">
                                 <div class="ui right floated  button">
-                                    <a href="/roomOrder.jsp?op=2&roomtype=<%=rtp.getRoomType()%>">预定</a>
+                                    <a href="/equipReserve.jsp?op=2&roomtype=<%=rtp.getRoomType()%>">预定</a>
                                     <i class="right chevron icon"></i>
                                 </div>
                                 <%--<div class="ui label">限制的</div>--%>

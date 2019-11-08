@@ -48,7 +48,7 @@ public class LoginServlet extends HttpServlet {
                     System.out.println("Entering Lab Member Page...");
 
                     Connection connection =null ;
-                    session.setAttribute("hoteladmin",userid);
+                    session.setAttribute("labmember",userid);
                     session.setAttribute("hotelpassword",userpassword);
 //                    if(GCON.MAP.get(GCON.HOTELUSERNAME)!=null) {
                     connection = DriverManager.getConnection(
@@ -56,7 +56,7 @@ public class LoginServlet extends HttpServlet {
                             GCON.HOTELUSERNAME, GCON.HOTELPASSWORD);
                     GCON.status =0 ;
                     DataBase.setConnection(connection);
-                    response.sendRedirect("./roomOrder.jsp?op=1");
+                    response.sendRedirect("./equipReserve.jsp?op=1");
 
                 } else {
                     System.out.println("Entering System Admin Page...");

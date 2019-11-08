@@ -64,7 +64,7 @@ CREATE TABLE VIPLevel
 CREATE TABLE roomTypeAndPrice
 (
   # 房间类型（主码）
-  roomType VARCHAR(32),
+  roomType VARCHAR(60),
   # 价格
   price INT UNSIGNED NOT NULL,
   
@@ -82,7 +82,7 @@ CREATE TABLE roomTypeAndPrice
 CREATE TABLE customers
 (
   # 顾客身份证
-  customerIDCard CHAR(18),
+  customerIDCard VARCHAR(18),
   # 性别
   customerGender CHAR(4) check (customerGender ='男' or customerGender='女'),  # 限制 男或女  
   # 姓名
@@ -92,7 +92,7 @@ CREATE TABLE customers
   # 会员等级
   customerVIPLevel smallint, # 改成 smallint 
   # 手机号码
-  customerPhoneNumber CHAR(11) , 
+  customerPhoneNumber VARCHAR(30) , 
   # 消费金额
   totalAmount INT UNSIGNED,  
   # 备注
@@ -113,7 +113,7 @@ CREATE TABLE room
   # 房间号（主码）
   roomNumber CHAR(6),
   # 房间类型
-  roomType VARCHAR(32) NOT NULL,
+  roomType VARCHAR(60) NOT NULL,
   # 状态
   roomStatus CHAR(6) check (roomStatus='空' or roomStatus='非空'), # 空/非空 
   # 备注
@@ -516,24 +516,24 @@ INSERT INTO `systemadministrator` VALUES ('admin', 'Junyao Ren', 'admin');
 
 
 #插入房间详细信息
-INSERT INTO `roomtypeandprice` VALUES ('Real-time PCR Machine', 318, '房间18-20㎡ | 大床1.8米 | 楼层：2层-4层 | 包含宽带', '/images/5.jpg');
-INSERT INTO `roomtypeandprice` VALUES ('NanoDrop', 188, '房间12㎡ | 大床1.5米 | 楼层：2层-4层 | 包含宽带', '/images/4.jpg');
-INSERT INTO `roomtypeandprice` VALUES ('Fluorescent Microscope', 178, '房间: 18平方米|小床1.2米|楼层: 1层 | 包含宽带', '/images/2.jpg');
-INSERT INTO `roomtypeandprice` VALUES ('Class-III Tissue Culture', 258, '房间20-25㎡ | 双床1.2米| 楼层：2层-4层 | 包含宽带', '/images/1.jpg');
-INSERT INTO `roomtypeandprice` VALUES ('Ultra-Centrifuge', 450, '房间: 16-20平方米|双大床1.5米|楼层: 2-5层| 包含宽带', '/images/3.jpg');
+INSERT INTO `roomtypeandprice` VALUES ('Real-time PCR Machine', 120, 'Real time PCR Detection System, iQ5 Biorad | DNA o cDNA', '/images/RTPCR.jpg');
+INSERT INTO `roomtypeandprice` VALUES ('NanoDrop', 188, 'Thermo Scientific Spectophotometer NanoDrop', '/images/ND.jpg');
+INSERT INTO `roomtypeandprice` VALUES ('Fluorescent Microscope', 178, 'Upright Microscopes Leica DM4 B & DM6 B | DFC7000T Camera', '/images/FM.jpg');
+INSERT INTO `roomtypeandprice` VALUES ('FPLC', 258, 'ÄKTA Pure 25M and 25L with Fraction Collectors | ÄKTA Flux 6', '/images/FPLC.jpg');
+INSERT INTO `roomtypeandprice` VALUES ('Ultra-Centrifuge', 450, 'Analytical Ultracentrifuge Beckman Coulter Proteomelab', '/images/UC.jpg');
 
 
 #插入房间编号类型和状态信息
 INSERT INTO `room` VALUES ('000001', 'NanoDrop', '空', NULL);
 INSERT INTO `room` VALUES ('000002', 'NanoDrop', '空', NULL);
 INSERT INTO `room` VALUES ('000003', 'Fluorescent Microscope', '空', NULL);
-INSERT INTO `room` VALUES ('000004', 'Class-III Tissue Culture', '空', NULL);
+INSERT INTO `room` VALUES ('000004', 'FPLC', '空', NULL);
 INSERT INTO `room` VALUES ('000005', 'Ultra-Centrifuge', '空', NULL);
 INSERT INTO `room` VALUES ('000006', 'Ultra-Centrifuge', '空', NULL);
 INSERT INTO `room` VALUES ('000007', 'NanoDrop', '空', NULL);
 INSERT INTO `room` VALUES ('000008', 'Ultra-Centrifuge', '空', NULL);
 INSERT INTO `room` VALUES ('000009', 'Fluorescent Microscope', '非空', NULL);
-INSERT INTO `room` VALUES ('000010', 'Class-III Tissue Culture', '非空', NULL);
+INSERT INTO `room` VALUES ('000010', 'FPLC', '非空', NULL);
 INSERT INTO `room` VALUES ('000011', 'Ultra-Centrifuge', '空', NULL);
 INSERT INTO `room` VALUES ('000012', 'NanoDrop', '空', NULL);
 INSERT INTO `room` VALUES ('000013', 'Ultra-Centrifuge', '空', NULL);
@@ -541,34 +541,34 @@ INSERT INTO `room` VALUES ('000014', 'NanoDrop', '空', NULL);
 INSERT INTO `room` VALUES ('000015', 'Real-time PCR Machine', '空', NULL);
 INSERT INTO `room` VALUES ('000016', 'Fluorescent Microscope', '空', NULL);
 INSERT INTO `room` VALUES ('000017', 'Fluorescent Microscope', '空', NULL);
-INSERT INTO `room` VALUES ('000018', 'Class-III Tissue Culture', '非空', NULL);
-INSERT INTO `room` VALUES ('000019', 'Class-III Tissue Culture', '空', NULL);
+INSERT INTO `room` VALUES ('000018', 'FPLC', '非空', NULL);
+INSERT INTO `room` VALUES ('000019', 'FPLC', '空', NULL);
 INSERT INTO `room` VALUES ('000020', 'Ultra-Centrifuge', '空', NULL);
 INSERT INTO `room` VALUES ('000021', 'Ultra-Centrifuge', '空', NULL);
 INSERT INTO `room` VALUES ('000022', 'Fluorescent Microscope', '空', NULL);
 INSERT INTO `room` VALUES ('000023', 'Fluorescent Microscope', '空', NULL);
 INSERT INTO `room` VALUES ('000024', 'Fluorescent Microscope', '空', NULL);
 INSERT INTO `room` VALUES ('000025', 'Real-time PCR Machine', '空', NULL);
-INSERT INTO `room` VALUES ('000026', 'Class-III Tissue Culture', '空', NULL);
-INSERT INTO `room` VALUES ('000027', 'Class-III Tissue Culture', '空', NULL);
+INSERT INTO `room` VALUES ('000026', 'FPLC', '空', NULL);
+INSERT INTO `room` VALUES ('000027', 'FPLC', '空', NULL);
 INSERT INTO `room` VALUES ('000028', 'NanoDrop', '空', NULL);
 INSERT INTO `room` VALUES ('000029', 'Fluorescent Microscope', '空', NULL);
-INSERT INTO `room` VALUES ('000030', 'Class-III Tissue Culture', '非空', NULL);
+INSERT INTO `room` VALUES ('000030', 'FPLC', '非空', NULL);
 INSERT INTO `room` VALUES ('000031', 'Real-time PCR Machine', '空', NULL);
 INSERT INTO `room` VALUES ('000032', 'NanoDrop', '非空', NULL);
 INSERT INTO `room` VALUES ('000033', 'Real-time PCR Machine', '空', NULL);
 INSERT INTO `room` VALUES ('000034', 'Ultra-Centrifuge', '空', NULL);
-INSERT INTO `room` VALUES ('000035', 'Class-III Tissue Culture', '空', NULL);
-INSERT INTO `room` VALUES ('000036', 'Class-III Tissue Culture', '空', NULL);
+INSERT INTO `room` VALUES ('000035', 'FPLC', '空', NULL);
+INSERT INTO `room` VALUES ('000036', 'FPLC', '空', NULL);
 INSERT INTO `room` VALUES ('000037', 'NanoDrop', '空', NULL);
-INSERT INTO `room` VALUES ('000038', 'Class-III Tissue Culture', '非空', NULL);
+INSERT INTO `room` VALUES ('000038', 'FPLC', '非空', NULL);
 INSERT INTO `room` VALUES ('000039', 'Real-time PCR Machine', '空', NULL);
 INSERT INTO `room` VALUES ('000040', 'Ultra-Centrifuge', '非空', NULL);
 INSERT INTO `room` VALUES ('000041', 'Ultra-Centrifuge', '空', NULL);
-INSERT INTO `room` VALUES ('000042', 'Class-III Tissue Culture', '空', NULL);
+INSERT INTO `room` VALUES ('000042', 'FPLC', '空', NULL);
 INSERT INTO `room` VALUES ('000043', 'Real-time PCR Machine', '空', NULL);
-INSERT INTO `room` VALUES ('000044', 'Class-III Tissue Culture', '非空', NULL);
-INSERT INTO `room` VALUES ('000045', 'Class-III Tissue Culture', '空', NULL);
+INSERT INTO `room` VALUES ('000044', 'FPLC', '非空', NULL);
+INSERT INTO `room` VALUES ('000045', 'FPLC', '空', NULL);
 INSERT INTO `room` VALUES ('000046', 'NanoDrop', '空', NULL);
 INSERT INTO `room` VALUES ('000047', 'NanoDrop', '空', NULL);
 INSERT INTO `room` VALUES ('000048', 'Real-time PCR Machine', '空', NULL);
@@ -577,33 +577,33 @@ INSERT INTO `room` VALUES ('000050', 'Real-time PCR Machine', '空', NULL);
 INSERT INTO `room` VALUES ('000051', 'Ultra-Centrifuge', '非空', NULL);
 INSERT INTO `room` VALUES ('000052', 'Ultra-Centrifuge', '非空', NULL);
 INSERT INTO `room` VALUES ('000053', 'NanoDrop', '非空', NULL);
-INSERT INTO `room` VALUES ('000054', 'Class-III Tissue Culture', '空', NULL);
+INSERT INTO `room` VALUES ('000054', 'FPLC', '空', NULL);
 INSERT INTO `room` VALUES ('000055', 'Fluorescent Microscope', '空', NULL);
-INSERT INTO `room` VALUES ('000056', 'Class-III Tissue Culture', '空', NULL);
+INSERT INTO `room` VALUES ('000056', 'FPLC', '空', NULL);
 INSERT INTO `room` VALUES ('000057', 'NanoDrop', '空', NULL);
 INSERT INTO `room` VALUES ('000058', 'Real-time PCR Machine', '非空', NULL);
 INSERT INTO `room` VALUES ('000059', 'NanoDrop', '空', NULL);
 INSERT INTO `room` VALUES ('000060', 'Real-time PCR Machine', '空', NULL);
 INSERT INTO `room` VALUES ('000061', 'Ultra-Centrifuge', '空', NULL);
-INSERT INTO `room` VALUES ('000062', 'Class-III Tissue Culture', '空', NULL);
+INSERT INTO `room` VALUES ('000062', 'FPLC', '空', NULL);
 INSERT INTO `room` VALUES ('000063', 'NanoDrop', '空', NULL);
 INSERT INTO `room` VALUES ('000064', 'Real-time PCR Machine', '空', NULL);
 INSERT INTO `room` VALUES ('000065', 'NanoDrop', '空', NULL);
 INSERT INTO `room` VALUES ('000066', 'NanoDrop', '空', NULL);
 INSERT INTO `room` VALUES ('000067', 'Fluorescent Microscope', '空', NULL);
-INSERT INTO `room` VALUES ('000068', 'Class-III Tissue Culture', '空', NULL);
+INSERT INTO `room` VALUES ('000068', 'FPLC', '空', NULL);
 INSERT INTO `room` VALUES ('000069', 'Fluorescent Microscope', '空', NULL);
 INSERT INTO `room` VALUES ('000070', 'Ultra-Centrifuge', '空', NULL);
 INSERT INTO `room` VALUES ('000071', 'Real-time PCR Machine', '空', NULL);
 INSERT INTO `room` VALUES ('000072', 'Real-time PCR Machine', '非空', NULL);
 INSERT INTO `room` VALUES ('000073', 'Ultra-Centrifuge', '空', NULL);
-INSERT INTO `room` VALUES ('000074', 'Class-III Tissue Culture', '空', NULL);
+INSERT INTO `room` VALUES ('000074', 'FPLC', '空', NULL);
 INSERT INTO `room` VALUES ('000075', 'Fluorescent Microscope', '空', NULL);
 INSERT INTO `room` VALUES ('000076', 'NanoDrop', '空', NULL);
 INSERT INTO `room` VALUES ('000077', 'NanoDrop', '非空', NULL);
 INSERT INTO `room` VALUES ('000078', 'Ultra-Centrifuge', '空', NULL);
 INSERT INTO `room` VALUES ('000079', 'Fluorescent Microscope', '空', NULL);
-INSERT INTO `room` VALUES ('000080', 'Class-III Tissue Culture', '非空', NULL);
+INSERT INTO `room` VALUES ('000080', 'FPLC', '非空', NULL);
 INSERT INTO `room` VALUES ('000081', 'Fluorescent Microscope', '空', NULL);
 INSERT INTO `room` VALUES ('000082', 'NanoDrop', '空', NULL);
 INSERT INTO `room` VALUES ('000083', 'NanoDrop', '空', NULL);
@@ -611,14 +611,14 @@ INSERT INTO `room` VALUES ('000084', 'NanoDrop', '非空', NULL);
 INSERT INTO `room` VALUES ('000085', 'NanoDrop', '空', NULL);
 INSERT INTO `room` VALUES ('000086', 'Fluorescent Microscope', '空', NULL);
 INSERT INTO `room` VALUES ('000087', 'NanoDrop', '空', NULL);
-INSERT INTO `room` VALUES ('000088', 'Class-III Tissue Culture', '空', NULL);
+INSERT INTO `room` VALUES ('000088', 'FPLC', '空', NULL);
 INSERT INTO `room` VALUES ('000089', 'Real-time PCR Machine', '空', NULL);
 INSERT INTO `room` VALUES ('000090', 'Ultra-Centrifuge', '非空', NULL);
-INSERT INTO `room` VALUES ('000091', 'Class-III Tissue Culture', '非空', NULL);
+INSERT INTO `room` VALUES ('000091', 'FPLC', '非空', NULL);
 INSERT INTO `room` VALUES ('000092', 'Real-time PCR Machine', '空', NULL);
 INSERT INTO `room` VALUES ('000093', 'Real-time PCR Machine', '非空', NULL);
-INSERT INTO `room` VALUES ('000094', 'Class-III Tissue Culture', '空', NULL);
-INSERT INTO `room` VALUES ('000095', 'Class-III Tissue Culture', '空', NULL);
+INSERT INTO `room` VALUES ('000094', 'FPLC', '空', NULL);
+INSERT INTO `room` VALUES ('000095', 'FPLC', '空', NULL);
 INSERT INTO `room` VALUES ('000096', 'Real-time PCR Machine', '空', NULL);
 INSERT INTO `room` VALUES ('000097', 'Ultra-Centrifuge', '空', NULL);
 INSERT INTO `room` VALUES ('000098', 'Real-time PCR Machine', '空', NULL);

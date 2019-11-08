@@ -71,7 +71,7 @@
         }
 
         function fun1( roomtype,roomid) {
-            window.location.href='/roomOrder.jsp?op=2&roomtype='+roomtype+'&roomid='+roomid
+            window.location.href='/equipReserve.jsp?op=2&roomtype='+roomtype+'&roomid='+roomid
 
         }
         function fun2() {
@@ -82,7 +82,7 @@
 
 
 </head>
-<%@include file="/hotelAdmin.jsp"%>
+<%@include file="/labMember.jsp"%>
 <body>
 <div class="pusher">
     <div class="ui container">

@@ -8,9 +8,9 @@
 <%
     Map<String, String[]> map =request.getParameterMap() ;
     int op = Integer.parseInt(map.get("op")[0]) ; //通过op选项来控制页面显示的内容
-    String roomid ="" ;
-    if(map.get("roomid")!=null){
-        roomid=map.get("roomid")[0] ;
+    String equipmentID ="" ;
+    if(map.get("equipmentID")!=null){
+        equipmentID=map.get("equipmentID")[0] ;
     }
 %>
 <html>
@@ -45,24 +45,23 @@
     </style>
     <script >
         function returnMainPage() {
-            window.location.href="/roomOrder.jsp?op=1" ;
+            window.location.href="/equipReserve.jsp?op=1" ;
         }
 
-        function fun4() {
-            var room = document.getElementById("roomid").value
+        function func4() {
+            var room = document.getElementById("equipmentID").value
             var name = document.getElementById("name").value
             var idcard =document.getElementById("idcard").value.toString()
-            var year=idcard.substring(6,10)
-            var month = idcard.substring(10,12)
-            var day =idcard.substring(12,14)
-            var birthdata = year+'-'+month+'-'+day
-            var sex = document.getElementById("sex").value
+            // var year=idcard.substring(6,10)
+            // var month = idcard.substring(10,12)
+            // var day =idcard.substring(12,14)
+            // var birthdata = year+'-'+month+'-'+day
+            var flexibility = document.getElementById("flexibility").value
             var phonenumber = document.getElementById("phonenumber").value
             var time = document.getElementById("time").value
-            if( /^[0-9]{6}$/.test(room) && /^[1-9][0-9]?$/.test(time) && /^[0-9]{17}[0-9|X]$/.test(idcard)
-                && /^1[3|4|5|8][0-9]\d{4,8}$/.test(phonenumber) ){
-                var url = "&roomid=" + room + "&name=" + name + "&idcard=" + idcard
-                    + "&birthdata=" + birthdata + "&sex=" + sex + "&phonenumber=" + phonenumber + "&time=" + time
+            if( true ){
+                var url = "&equipmentID=" + room + "&name=" + name + "&idcard=" + idcard
+                     + "&flexibility=" + flexibility + "&phonenumber=" + phonenumber + "&time=" + time
 
                 var url1 = window.location.search.split("&")[1]
 
@@ -74,11 +73,11 @@
 
     </script>
 
-</head><%@include file="hotelAdmin.jsp"%>
+</head><%@include file="labMember.jsp"%>
 <body>
 <div class="pusher">
     <div class="ui container">
-        <h2 class="ui header">订房</h2>
+        <h2 class="ui header">Reserve an Equipment</h2>
         <div class="ui column grid">
             <div class="four wide column">
                 <div class="ui vertical steps">
@@ -86,7 +85,7 @@
                     <div class="<%=(op<=1)?"active step ":"completed step"%>" >
                         <i class="building icon"></i>
                         <div class="content">
-                            <div class="title">选定房型</div>
+                            <div class="title">Choose</div>
                             <%--<div class="description">Choose your shipping options</div>--%>
                         </div>
                     </div>
@@ -94,7 +93,7 @@
                     <div class="<%=(op==2)?"active step ":(op==1)?"step":"completed step"%>">
                         <i class="user icon"></i>
                         <div class="content">
-                            <div class="title">用户登记</div>
+                            <div class="title">Reserve</div>
                             <%--<div class="description">Enter billing information</div>--%>
                         </div>
                     </div>
@@ -102,7 +101,7 @@
                     <div class="<%=(op==3|| op==4)?"active step ":"step"%>">
                         <i class="info icon"></i>
                         <div class="content">
-                            <div class="title">订单支付</div>
+                            <div class="title">Confirm</div>
                             <%--<div class="description">Verify order details</div>--%>
                         </div>
                     </div>
@@ -138,12 +137,13 @@
                                         <%=list.get(1)%>/<%=list.get(0)%>
                                     </div>
                                     <div class="label">
-                                        入住/空房
+                                        In-use/Available
                                     </div>
                                 </div>
                             </div>
-                            <a class="ui orange right ribbon label" href="<%=list.get(1)==0?"":"/roomOrder.jsp?op=2&roomtype="+rtp.getRoomType()%>">
-                                ¥<%=rtp.getPrice()%>/天
+                            <a class="ui orange right ribbon label" href="<%=list.get(1)==0?"":"/equipReserve.jsp?op=2&equipType="+rtp.getRoomType()%>">
+                                <%--¥<%=rtp.getPrice()%>/天--%>
+                                Select
                             </a>
                         </div>
                     </div>
@@ -151,23 +151,23 @@
                     <%}
                     else if(op==2){
                     %>
-                    <form class="ui form" onsubmit="return  fun4(this)" >
-                        <h4 class="ui dividing header">房间选择</h4>
+                    <form class="ui form" onsubmit="return  func4(this)" >
+                        <h4 class="ui dividing header">Choose Specific Equipment:</h4>
                         <div class="field">
-                            <label>Room</label>
+                            <label>Equipment ID</label>
                             <div class="two fields">
                                 <div class="field">
 
-                                    <select class="ui fluid search dropdown" id="roomid" name="roomid">
+                                    <select class="ui fluid search dropdown" id="equipmentID" name="Equipment ID">
                                         <%
-                                            String roomtype =request.getParameterMap().get("roomtype")[0].toString() ;
+                                            String roomtype =request.getParameterMap().get("equipType")[0].toString() ;
                                             System.out.println(roomtype);
                                             ArrayList<String> list = searchEmptyRooms(roomtype);
                                             for(String str : list){
                                                 System.out.println(str);
                                         %>
                                         <option value=<%=str%>
-                                                    <% if(str.equals(roomid)){ %>
+                                                    <% if(str.equals(equipmentID)){ %>
                                                         selected="selected"
                                                 <%}%>
                                         ><%=str%></option>
@@ -182,31 +182,31 @@
 
                             </div>
                         </div>
-                        <h4 class="ui dividing header">预定天数</h4>
+                        <h4 class="ui dividing header">Reservation Length:</h4>
                         <div class="field">
-                            <label>time</label>
+                            <label>Days</label>
                             <div class="two fields">
                                 <div class="field">
-                                    <input type="text" maxlength="5" id="time" name="time" placeholder="预定天数">
+                                    <input type="text" maxlength="5" id="time" name="time" placeholder="Days" value="2">
 
                                 </div>
                             </div>
                         </div>
-                        <h4 class="ui dividing header">个人信息</h4>
+                        <h4 class="ui dividing header">User Information</h4>
                         <div class="field">
                             <label>Name</label>
                             <div class="two fields">
 
                                 <div class="field">
-                                    <input type="text" id="name" name="name" placeholder="姓名">
+                                    <input type="text" id="name" name="name" placeholder="Name" value="member">
                                 </div>
                             </div>
                         </div>
                         <%--<h4 class="ui dividing header">Billing Information</h4>--%>
                         <div class="fields">
                             <div class="seven wide field">
-                                <label>身份证号</label>
-                                <input type="text" id="idcard" name="idcard" maxlength="18" placeholder="身份证号">
+                                <label>Campus ID</label>
+                                <input type="text" id="idcard" name="idcard" maxlength="18" placeholder="Campus ID" value="W30826200001012232">
                             </div>
                             <%--<div class="six wide field">--%>
                             <%--<label>出生日期</label>--%>
@@ -214,12 +214,12 @@
                             <%--<input type="date" value="2018-01-01" id="birthdata"/>--%>
                             <%--</div>--%>
                             <div class="six wide field">
-                                <label>性别</label>
+                                <label>Flexible?</label>
                                 <div class="two fields">
                                     <div class="field">
-                                        <select class="ui fluid search dropdown" id="sex">
-                                            <option value="男">男</option>
-                                            <option value="女">女</option>
+                                        <select class="ui fluid search dropdown" id="flexibility">
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
                                         </select>
                                     </div>
                                 </div>
@@ -227,18 +227,18 @@
                         </div>
                         <div class="fields">
                             <div class="seven wide field">
-                                <label>手机号</label>
-                                <input type="text" id="phonenumber" name="phonenumber" maxlength="16" placeholder="手机号">
+                                <label>Phone</label>
+                                <input type="text" id="phonenumber" name="phonenumber" maxlength="30" placeholder="Phone" value="214-987-2131">
                             </div>
                         </div>
-                        <div class="ui right submit floated button" tabindex="0"  >Submit Order</div>
+                        <div class="ui right submit floated button" tabindex="0" >Submit Reservation</div>
                     </form>
                     <%}
                     else if(op==3){
 
                     %>
 
-                    <h4 class="ui dividing header">订单确认</h4>
+                    <h4 class="ui dividing header">Confirmation</h4>
                     <table class="ui table">
                         <thead>
                         <tr><th class="six wide">Name</th>
@@ -262,19 +262,19 @@
                     </table>
 
 
-                    <h4 class="ui dividing header">完成支付</h4>
+                    <h4 class="ui dividing header">Submit Reservation</h4>
                     <div class="ui right floated labeled button" tabindex="0">
                         <a class="ui basic right pointing label">
                             <%-- 去数据库查询价格 * 天数 *相应的折扣 --%>
-                            ¥<%=map.get("pay")[0]%>
+                            <%--¥<%=map.get("pay")[0]%>--%>
                         </a>
                         <div class="ui right button">
-                            <i class="shopping icon"></i> <a href="ServiceManage?<%=request.getQueryString()%>">支付</a>
+                            <i class="shopping icon"></i> <a href="ServiceManage?<%=request.getQueryString()%>">Submit</a>
                         </div>
                     </div>
                     <%} else if (op == 4) {%>
-                    <h4 class="ui dividing header">支付成功</h4>
-                    <div class="ui right button" onclick="returnMainPage()">返回</div>
+                    <h4 class="ui dividing header">Successfully Reserved! Good luck with your experiments! </h4>
+                    <div class="ui right button" onclick="returnMainPage()">Back</div>
                     <%}%>
                 </div>
             </div>
@@ -296,24 +296,24 @@
                     rules: [
                         {
                             type: 'regExp[/^[1-9][0-9]?$/]',
-                            prompt: '时间不符合规范'
+                            prompt: 'Invalid Number'
                         }
                     ]
                 }
-                ,roomid: {
-                    identifier: 'roomid',
+                ,equipmentID: {
+                    identifier: 'equipmentID',
                     rules: [
                         {
                             type: 'regExp[/^[0-9]{6}$/]',
-                            prompt: '房间号不符合规范'
+                            prompt: 'Invalid EquipmentID'
                         }
                     ]
                 },idcard: {
                     identifier: 'idcard',
                     rules: [
                         {
-                            type: 'regExp[/^[0-9]{17}[0-9|X]$/]',
-                            prompt: '身份证号不符合规范'
+                            type: 'regExp[/[0-9]*/]',
+                            prompt: 'Invalid CampusID'
                         }
                     ]
                 }
@@ -322,8 +322,8 @@
                     identifier: 'phonenumber',
                     rules: [
                         {
-                            type: 'regExp[/^1[3|4|5|8][0-9]\\d{4,8}$/]',
-                            prompt: '手机号不符合规范'
+                            type: 'regExp[/[0-9]*/]',
+                            prompt: 'Invalid Phone Number'
                         }
                     ]
                 }

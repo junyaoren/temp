@@ -10,9 +10,9 @@
     int op = Integer.parseInt(map.get("op")[0]) ; //通过op选项来控制页面显示的内容
     Order order =null ;
     if(op==2){
-        System.out.println("房间编号:"+map.get("roomid")[0]);
+        System.out.println("EquipmentID:"+map.get("roomid")[0]);
         order =getOrder(map.get("roomid")[0]) ;
-        System.out.println("订单编号:"+order.getOrderNumber());
+        System.out.println("Reservation ID:"+order.getOrderNumber());
     }
 %>
 <html>
@@ -63,14 +63,14 @@
 
 
 
-<%@include file="/hotelAdmin.jsp"%>
+<%@include file="/labMember.jsp"%>
 <body>
 
 <div class="pusher">
 
 
     <div class="ui container">
-        <h2 class="ui header">退房</h2>
+        <h2 class="ui header">Equipment Check Out</h2>
         <div class="ui column grid">
             <div class="four wide column">
                 <div class="ui vertical steps">
@@ -78,7 +78,7 @@
                     <div class="<%=(op<=1)?"active step ":"completed step"%>" >
                         <i class="building icon"></i>
                         <div class="content">
-                            <div class="title">选择房号</div>
+                            <div class="title">EquipID</div>
 
                         </div>
                     </div>
@@ -86,7 +86,7 @@
                     <div class="<%=(op==2)?"active step ":(op==1)?"step":"completed step"%>">
                         <i class="info icon"></i>
                         <div class="content">
-                            <div class="title">订单信息</div>
+                            <div class="title">Reservation Info</div>
                             <%--<div class="description">Enter billing information</div>--%>
                         </div>
                     </div>
@@ -97,9 +97,9 @@
 
                 <%  if(op==1){ %>
                 <form class="ui form" onsubmit="return fun(this)">
-                    <h4 class="ui dividing header">房间选择</h4>
+                    <h4 class="ui dividing header">Select your Equipment to Check Out:</h4>
                     <div class="four wide column">
-                        <label>Room</label>
+                        <label>Equipment ID</label>
 
                         <div class="five wide field">
 
@@ -109,7 +109,7 @@
                                     ArrayList<String> list = searchFullRooms();
                                     if(list.size()==0){
                                 %>
-                                <option value="无房可退">无房可退</option>
+                                <option value="Nothing to Checkout">N/A</option>
                                 <%
                                     }
                                     for(String str : list){
@@ -128,7 +128,7 @@
 
                 <%--  房间号 居住时间  --%>
 
-                <h4 class="ui dividing header">订单信息</h4>
+                <h4 class="ui dividing header">Reservation Info</h4>
                 <table class="ui table">
                     <thead>
                     <tr><th class="six wide">Name</th>
@@ -138,55 +138,55 @@
 
                     <tr>
 
-                        <td>订单编号</td>
+                        <td>Reservation ID</td>
                         <td><%=order.getOrderNumber()%></td>
 
                     </tr>
                     <tr>
 
-                        <td>住户身份证</td>
+                        <td>User CampusID</td>
                         <td><%=order.getCustomerIDCard()%></td>
 
                     </tr>
                     <tr>
 
-                        <td>房号</td>
+                        <td>Equipment ID</td>
                         <td><%=order.getRoomNumber()%></td>
 
                     </tr>
                     <tr>
 
-                        <td>订单生成时间</td>
+                        <td>Reservation Submission Time</td>
                         <td><%=order.getOrderTime()%></td>
 
                     </tr>
                     <tr>
 
-                        <td>入住时间</td>
+                        <td>Start Time</td>
                         <td><%=order.getCheckInTime()%></td>
 
                     </tr>
                     <tr>
 
-                        <td>退房时间</td>
+                        <td>Checkout Time</td>
                         <td><%=order.getCheckOutTime()%></td>
 
                     </tr>
                     <tr>
 
-                        <td>服务人员编号</td>
+                        <td>User Name</td>
                         <td><%=order.getWaiterID()%></td>
 
                     </tr>
+                    <%--<tr>--%>
+
+                        <%--<td>订单总金额(含续费)</td>--%>
+                        <%--<td><%=order.getTotalMoney()%></td>--%>
+
+                    <%--</tr>--%>
                     <tr>
 
-                        <td>订单总金额(含续费)</td>
-                        <td><%=order.getTotalMoney()%></td>
-
-                    </tr>
-                    <tr>
-
-                        <td>备注</td>
+                        <td>Notes</td>
                         <td><%=order.getRemarks()%></td>
 
                     </tr>
@@ -194,20 +194,20 @@
                 </table>
 
 
-                <h4 class="ui dividing header">完成退房</h4>
+                <h4 class="ui dividing header">Finish Check Out</h4>
 
                 <div class="ui right button" >
                     <%--<% if(op==2)System.out.println("打印订单编号:"+order.getOrderNumber() );%>--%>
                     <%--<a href="ServiceManage?op=5&orderNumber=<%=order.getOrderNumber()%>">确认退房</a>--%>
-                    <a href="/roomCheckOut.jsp?op=3&orderNumber=<%=order.getOrderNumber()%>">确认退房</a>
+                    <a href="/roomCheckOut.jsp?op=3&orderNumber=<%=order.getOrderNumber()%>">Confirm Check Out</a>
                 </div>
                 <%}else if (op == 3) {
                     String orderNumber= map.get("orderNumber")[0] ;
-                    System.out.println("订单:"+orderNumber);
+                    System.out.println("Reservation:"+orderNumber);
                     checkOutRoom(orderNumber) ;
                 %>
-                <h4 class="ui dividing header">退房成功</h4>
-                <div class="ui right button" onclick="returnMainPage()">返回</div>
+                <h4 class="ui dividing header">Successfully Checked Out</h4>
+                <div class="ui right button" onclick="returnMainPage()">Back</div>
                 <%}%>
             </div>
             <%--<h1>欢迎续费</h1>--%>
@@ -221,11 +221,11 @@
                 // if( /^[0-9]{6}$/.test(room) && /^[1-9][0-9]?$/.test(time) && /^[0-9]{18}$/.test(idcard)
                 //         && /^1[3|4|5|8][0-9]\d{4,8}$/.test(phonenumber) ){
                 roomid: {
-                    identifier: 'roomid',
+                    identifier: 'EquipmentID',
                     rules: [
                         {
                             type: 'regExp[/^[0-9]{6}$/]',
-                            prompt: '房间号不符合规范'
+                            prompt: 'Invalid EquipmentID'
                         }
                     ]
                 }

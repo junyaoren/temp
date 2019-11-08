@@ -11,7 +11,7 @@
     <title>订单管理</title>
 
 </head>
-<%@include file="/hotelAdmin.jsp"%>
+<%@include file="/labMember.jsp"%>
 <body>
 </body>
 </html>

@@ -85,7 +85,7 @@
 
     </script>
 </head>
-<%@include file="/hotelAdmin.jsp"%>
+<%@include file="/labMember.jsp"%>
 <body>
 
 <%

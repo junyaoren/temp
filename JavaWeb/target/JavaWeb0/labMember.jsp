@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%
-    if (session.getAttribute("hoteladmin") == null) {
+    if (session.getAttribute("labmember") == null) {
         response.sendRedirect("/index.jsp");
     }
 
@@ -64,7 +64,8 @@
             var hours=now.getHours();
             var minutes=now.getMinutes();
             var seconds=now.getSeconds();
-            document.getElementById("div").innerHTML=year+"年"+fix(month, 2)+"月"+fix(day, 2)+"日"+fix(hours, 2)+" : "+fix(minutes, 2)+" : "+fix(seconds, 2);
+            document.getElementById("div").innerHTML=year+"-"+fix(month, 2)+"-"+fix(day, 2)+"-"+fix(hours, 2)+" : "+fix(minutes, 2)+" : "+fix(seconds, 2);
+
         }
 
         function fix(num, length) {
@@ -79,34 +80,34 @@
 
     <div class="ui simple dropdown item">
         <i class="tasks icon"></i>
-        业务办理
+        Reservation Management
         <i class="dropdown icon"></i>
         <div class="menu">
-            <a class="item" href="/roomOrder.jsp?op=1"><i class="arrow right icon"></i>订房</a>
-            <a class="item" href="/roomRenew.jsp?op=1"><i class="spinner icon"></i>续费</a>
-            <a class="item" href="/roomCheckOut.jsp?op=1"><i class="arrow left icon"></i>退房</a>
+            <a class="item" href="/equipReserve.jsp?op=1"><i class="arrow right icon"></i>New Reservation</a>
+            <a class="item" href="/extendReservation.jsp?op=1"><i class="spinner icon"></i>Extend Reservation</a>
+            <a class="item" href="/roomCheckOut.jsp?op=1"><i class="arrow left icon"></i>Cancel Reservation</a>
         </div>
     </div>
     <div class="ui simple dropdown item">
         <i class="building icon"></i>
-        客房管理
+        Equipment Management
         <i class="dropdown icon"></i>
         <div class="menu">
-            <a class="item" href="/RoomManage?op=1"><i class="search icon"></i>查询房间</a>
-            <a class="item" href="/RoomManage?op=2"><i class="plus icon"></i>增加房间</a>
-            <a class="item" href="/roomManagement/roomDisplay.jsp"><i class="zoom out icon"></i>房间概览</a>
+            <a class="item" href="/RoomManage?op=1"><i class="search icon"></i>Find an Equipment</a>
+            <a class="item" href="/RoomManage?op=2"><i class="plus icon"></i>Add New Equipment</a>
+            <a class="item" href="/roomManagement/roomDisplay.jsp"><i class="zoom out icon"></i>View Equipments</a>
         </div>
     </div>
     <div class="ui simple dropdown item">
         <i class="browser icon"></i>
-        订单浏览
+        Reservation History
         <i class="dropdown icon"></i>
         <div class="menu">
-            <a class="item" href="/OrderManage?op=1"><i class="book icon"></i>预定订单</a>
-            <a class="item" href="/OrderManage?op=2"><i class="file icon"></i>入住订单</a>
-            <a class="item" href="/OrderManage?op=3"><i class="file text outline icon"></i>续费订单</a>
-            <a class="item" href="/OrderManage?op=4"><i class="file archive outline icon"></i>历史订单</a>
-            <a class="item" href="/OrderManage?op=5"><i class="folder open icon"></i>所有订单</a>
+            <a class="item" href="/OrderManage?op=1"><i class="book icon"></i>Incoming Reservations</a>
+            <a class="item" href="/OrderManage?op=2"><i class="file icon"></i>In-use Reservations</a>
+            <a class="item" href="/OrderManage?op=3"><i class="file text outline icon"></i>Extended List</a>
+            <a class="item" href="/OrderManage?op=4"><i class="file archive outline icon"></i>Completed Reservations</a>
+            <a class="item" href="/OrderManage?op=5"><i class="folder open icon"></i>All Reservations</a>
         </div>
     </div>
     <div class="right menu">
@@ -118,10 +119,10 @@
     <div class="right menu">
         <div class="ui simple dropdown item">
             <i class="user icon"></i>
-            <%="宾馆管理员: " + session.getAttribute("hoteladmin")%>  <%-- 后期换成session("name")  --%>
+            <%="LabMember: " + session.getAttribute("labmember")%>  <%-- 后期换成session("name")  --%>
             <i class="dropdown icon"></i>
             <div class="menu">
-                <a class="item" href="/ServiceManage?op=2"><i class="sign out icon"></i>注销</a>
+                <a class="item" href="/ServiceManage?op=2"><i class="sign out icon"></i>Logout</a>
             </div>
         </div>
     </div>

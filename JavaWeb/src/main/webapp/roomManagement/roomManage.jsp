@@ -21,7 +21,7 @@
     <meta charset="UTF-8">
     <title>客房管理</title>
 </head>
-<%@include file="/hotelAdmin.jsp"%>
+<%@include file="/labMember.jsp"%>
 <body>
     <%-- 后期换成session(\"name\")  --%>\n"
 </body>

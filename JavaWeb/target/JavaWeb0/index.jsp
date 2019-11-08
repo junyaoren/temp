@@ -82,13 +82,13 @@
             <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
             <div class="field" align="center">
               <div class="ui radio checkbox">
-                <input type="radio" name="admin" value="0" checked="checked">
+                <input type="radio" name="admin" value="0">
                 <label><i class="user icon"></i>Lab Admin</label>
               </div>
             </div>
             <div class="field">
               <div class="ui radio checkbox">
-                <input type="radio" name="admin" value="1">
+                <input type="radio" name="admin" value="1" checked="checked">
                 <label><i class="users icon"></i>Equip Manager</label>
               </div>
             </div>
@@ -99,13 +99,13 @@
           <div class="field">
             <div class="ui left icon input">
               <i class="user icon"></i>
-              <input type="text" id="id" name="id" placeholder="username" value="admin">
+              <input type="text" id="id" name="id" placeholder="username" value="member">
             </div>
           </div>
           <div class="field">
             <div class="ui left icon input">
               <i class="lock icon"></i>
-              <input type="password" id="password" name="password" placeholder="password" value="admin">
+              <input type="password" id="password" name="password" placeholder="password" value="member">
             </div>
           </div>
           <div >
