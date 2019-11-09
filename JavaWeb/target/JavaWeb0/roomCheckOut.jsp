@@ -10,9 +10,9 @@
     int op = Integer.parseInt(map.get("op")[0]) ; //通过op选项来控制页面显示的内容
     Order order =null ;
     if(op==2){
-        System.out.println("房间编号:"+map.get("roomid")[0]);
+        System.out.println("EquipmentID:"+map.get("roomid")[0]);
         order =getOrder(map.get("roomid")[0]) ;
-        System.out.println("订单编号:"+order.getOrderNumber());
+        System.out.println("Reservation ID:"+order.getOrderNumber());
     }
 %>
 <html>

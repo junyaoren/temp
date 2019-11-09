@@ -43,6 +43,11 @@ public class Room {
     }
 
     public String getRoomStatus() {
+//        if (roomStatus.equals("空")) {
+//            return "Free";
+//        } else if (roomStatus.equals("非空")){
+//            return "N/A";
+//        }
         return roomStatus;
     }
 

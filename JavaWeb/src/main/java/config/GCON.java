@@ -13,7 +13,9 @@ public class GCON {
             "&serverTimezone=UTC" +
             "&testOnBorrow=true" +
             "&removeAbandoned=true" +
-            "&testOnReturn=true";
+            "&testOnReturn=true" +
+            "&autoReconnect=true" +
+            "&validationQuery=SELECT 1";
 
     //登录时默认使用system用户验证登录名与密码是否正确
     public static  String USERNAME = "system";

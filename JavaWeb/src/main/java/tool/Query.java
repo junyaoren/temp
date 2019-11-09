@@ -197,6 +197,13 @@ public class Query {
     //查询所有房间的信息
     public static  ArrayList<Room> getAllRoomsInfo(String s ,String search) {
 
+
+        if (s.equals("All")) {s = "任意";}
+        if (s.equals("Available")) {s = "空";}
+        if (s.equals("Reserved/In-use")) {s = "非空";}
+
+
+
         ArrayList<Room>Rooms = new ArrayList<Room>() ;
         Connection connection = null;
         PreparedStatement preparedStatement = null;

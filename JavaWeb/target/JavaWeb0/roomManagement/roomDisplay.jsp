@@ -10,8 +10,10 @@
 <%@ page import="tool.Query" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    String rs1[] = {"空","非空","任意"}  ;
-    Map<String, String[]> map =request.getParameterMap() ;
+    String rs1[] = {"Available","Reserved/In-use","All"};
+
+
+    Map<String, String[]> map =request.getParameterMap();
 
 
     String size1=""  ;
@@ -70,13 +72,13 @@
             window.location.href='/roomManagement/roomDisplay.jsp?'+v
         }
 
-        function fun1( roomtype,roomid) {
-            window.location.href='/equipReserve.jsp?op=2&roomtype='+roomtype+'&roomid='+roomid
+        function fun1( equipType,equipID) {
+            window.location.href='/equipReserve.jsp?op=2&equipType='+equipType+'&equipmentID='+equipID
 
         }
-        function fun2() {
-            var roomid = document.getElementById('roomid').value
-            window.location.href='/roomManagement/roomDisplay.jsp?search='+roomid
+        function func2() {
+            var equipID = document.getElementById('equipID').value
+            window.location.href='/roomManagement/roomDisplay.jsp?search='+equipID
         }
     </script>
 
@@ -86,14 +88,14 @@
 <body>
 <div class="pusher">
     <div class="ui container">
-        <h2 class="ui header">客房概览</h2>
+        <h2 class="ui header">View All Equipments</h2>
         <div class="ui column grid">
             <div class="four wide column">
                 <div class="ui vertical  menu">
                     <div class="item">
                         <a class="active title">
                             <i class="dropdown icon"></i>
-                            状态
+                            Status
                         </a>
                         <div class="active content">
                             <div class="ui form">
@@ -116,12 +118,12 @@
             <div class="eleven wide  column" >
                 <div class="ui search ">
                     <div class="ui icon input">
-                        <input class="prompt" type="text" id="roomid" <% if(!search.equals("")){ %>
+                        <input class="prompt" type="text" id="equipID" <% if(!search.equals("")){ %>
                                value=<%=search%>
-                                   <% }%> placeholder="Search Rooms...">
+                                   <% }%> placeholder="Search Equipment...">
 
                     </div>
-                    <div class="ui button" onclick="fun2()"> <i class="search icon"></i>房间号检索</div>
+                    <div class="ui button" onclick="func2()"> <i class="search icon"></i>Search with equipmentID</div>
                 </div>
 
                 <br>
@@ -131,19 +133,27 @@
                     <div class="card" >
                         <div class=" fluid image" >
                             <a class="ui big blue right corner label" >
-                                <%=roominfo.getRoomStatus()%>
+                                <%
+                                    String status = "";
+                                    if (roominfo.getRoomStatus().equals("空")) {
+                                      status = "Free";
+                                    } else {
+                                      status = "N/A";
+                                    }
+                                %>
+                                <%=status%>
                             </a>
                             <img src=<%=roomTypeMap.get(roominfo.getRoomType()).getUrl()%> width="400" height="300"
                                  onclick="<%=roominfo.getRoomStatus().equals("非空")?"":"fun1('"+roominfo.getRoomType()+"','"+roominfo.getRoomNumber()+"')" %> ">
                         </div>
                         <div class="extra">
-                            roomid:<%=roominfo.getRoomNumber()%><br>
-                            房型:<%=roominfo.getRoomType()%><br>
+                            EquipmentID: <%=roominfo.getRoomNumber()%><br>
+                            EquipmentType: <%=roominfo.getRoomType()%><br>
                             <% if(roominfo.getRoomStatus().equals("非空")){
                                 OrderView view = Query.getFullOrderViews(roominfo.getRoomNumber());
                             %>
-                            入住用户:<%=view.getCustomer()%><br>
-                            到期时间:<%=view.getCheckOutTime()%><br>
+                            Using/Reserved-by: <%=view.getCustomer()%><br>
+                            Available by: <%=view.getCheckOutTime()%><br>
                             <%} %>
                         </div>
                     </div>
