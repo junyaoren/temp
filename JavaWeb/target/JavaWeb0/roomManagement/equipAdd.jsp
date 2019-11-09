@@ -21,22 +21,25 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>添加客房</title>
+    <title>Add New Equipment</title>
     <script>
 
         function returnMainPage() {
-            window.location.href="/roomManagement/roomAdd.jsp?op=2";
+            window.location.href="/roomManagement/equipAdd.jsp?op=2";
         }
 
-        function submitNewRoomInfo() {
-
-            var roomNumber = document.getElementById("roomNumber").value;
-            var roomType = document.getElementById("roomType").value;
+        function submitNewEquipInfo() {
+            // print("hello");
+            var EquipmentID = document.getElementById("EquipmentID").value;
+            var EquipmentType = document.getElementById("EquipmentType").value;
+            console.log(EquipmentType);
             var remarks = document.getElementById("remarks").value;
-            if( /^[0-9]{6}$/.test(roomNumber)){
-                var url = "&roomNumber=" + roomNumber + "&roomType=" + roomType + "&remarks=" + remarks;
-                window.location.href = "/roomManagement/roomAdd.jsp?op=3" + url;
+            if( /^[0-9]{6}$/.test(EquipmentID)){
+                var url = "&EquipmentID=" + EquipmentID + "&EquipmentType=" + EquipmentType + "&remarks=" + remarks;
+                console.log(url);
+                window.location.href = "/roomManagement/equipAdd.jsp?op=3" + url;
             }
+
             return false ;
         }
 
@@ -48,7 +51,7 @@
             var urlNew = window.location.href.split("&")[1] + "&" + window.location.href.split("&")[2]
                 + "&" + window.location.href.split("&")[3];
 
-            window.location.href = "/roomManagement/roomAdd.jsp?op=4&" + urlNew;
+            window.location.href = "/roomManagement/equipAdd.jsp?op=4&" + urlNew;
 
 
         }
@@ -62,7 +65,7 @@
 <div class="pusher">
 
     <div class="ui container">
-        <h2 class="ui header">添加客房</h2>
+        <h2 class="ui header">Add New Equipment</h2>
         <div class="ui column grid">
             <div class="four wide column">
                 <div class="ui vertical steps">
@@ -70,14 +73,14 @@
                     <div class="<%=(op == 2) ? "active step ":"completed step"%>" >
                         <i class="add circle icon"></i>
                         <div class="content">
-                            <div class="title">客房信息</div>
+                            <div class="title">Equipment Info</div>
                         </div>
                     </div>
 
                     <div class="<%=(op == 3) ? "active step ":(op== 2)?"step":"completed step"%>">
                         <i class="check circle icon"></i>
                         <div class="content">
-                            <div class="title">信息确认</div>
+                            <div class="title">Confirm</div>
                         </div>
                     </div>
 
@@ -87,66 +90,66 @@
 
             <div class="eleven wide  column" >
 
-                <%//添加客房信息
+                <%// add info about new equip
                     if (op == 2) {
                 %>
-                <form class="ui form" onsubmit="return submitNewRoomInfo(this)">
-                    <h2 class="ui dividing header">填写新增客房信息</h2>
+                <form class="ui form" onsubmit="return submitNewEquipInfo(this)">
+                    <h2 class="ui dividing header">Fill the equipment information</h2>
                     <div class="two fields">
                         <div class="field">
-                            <label>房间号</label>
-                            <input type="text" id="roomNumber" name="roomid" placeholder="输入房间号">
+                            <label>EquipmentID</label>
+                            <input type="text" id="EquipmentID" name="EquipmentID" placeholder="EquipmentID" value= <%= "" + (int) (Math.random() * (999999 - 100000) + 100000) %>>
                         </div>
                         <div class="field">
-                            <label>房间类型</label>
+                            <label>Equipment Type</label>
                             <% ArrayList<RoomTypeAndPrice> rooms = getAllRooms();%>
-                            <select class="ui fluid dropdown" id="roomType">
+                            <select class="ui fluid dropdown" id="EquipmentType">
                                 <%for(RoomTypeAndPrice room :rooms){%>
-                                <option value=<%=room.getRoomType()%>><%=room.getRoomType()%></option>
+                                <option value=<%=String.join("%20", room.getRoomType().split(" "))%>><%=room.getRoomType()%></option>
                                 <%}%>
                             </select>
                         </div>
                     </div>
                     <div class="field">
-                        <label>备注</label>
-                        <input type="text" id="remarks" placeholder="备注信息">
+                        <label>Notes</label>
+                        <input type="text" id="remarks" placeholder="Some description about the equipment...">
                     </div>
-                    <div class="ui submit button">提交</div>
+                    <div class="ui submit button">Submit</div>
                 </form>
 
                 <%} else if (op == 3) {
                 %>
 
-                <h2 class="ui dividing header">待添加客房信息确认</h2>
+                <h2 class="ui dividing header">Confirm Equipment Information</h2>
                 <form class="ui form">
                     <table class="ui table">
                         <thead>
-                        <tr><th class="six wide">房间号</th>
-                            <th class="six wide">房间类型</th>
-                            <th class="six wide">备注</th>
+                        <tr><th class="six wide">Equipment ID</th>
+                            <th class="six wide">Equipment Type</th>
+                            <th class="six wide">Notes</th>
                         </tr></thead>
                         <tbody>
                         <tr>
-                            <td><%=request.getParameter("roomNumber")%></td>
-                            <td><%=request.getParameter("roomType")%></td>
+                            <td><%=request.getParameter("EquipmentID")%></td>
+                            <td><%=request.getParameter("EquipmentType")%></td>
                             <td><%=request.getParameter("remarks")%></td>
                         </tr>
                         </tbody>
                     </table>
 
-                    <div class="ui button" onclick="ensureButtonClicked()">确认</div>
+                    <div class="ui button" onclick="ensureButtonClicked()">Confirm</div>
                 </form>
 
                 <%} else if (op == 4) {
                     Room newRoom = new Room();
                     newRoom.setRoomStatus("空");
-                    newRoom.setRoomNumber(request.getParameter("roomNumber"));
-                    newRoom.setRoomType(request.getParameter("roomType"));
+                    newRoom.setRoomNumber(request.getParameter("EquipmentID"));
+                    newRoom.setRoomType(request.getParameter("EquipmentType"));
                     newRoom.setRemarks(request.getParameter("remarks"));
                     Query.insertRoom(newRoom);
                 %>
-                <h4 class="ui dividing header">添加成功</h4>
-                <div class="ui right button" onclick="returnMainPage()">返回</div>
+                <h4 class="ui dividing header">Added Successfully</h4>
+                <div class="ui right button" onclick="returnMainPage()">Back</div>
                 <%}%>
             </div>
         </div>
@@ -163,12 +166,12 @@
         $('.ui.form').form({
                 // if( /^[0-9]{6}$/.test(room) && /^[1-9][0-9]?$/.test(time) && /^[0-9]{18}$/.test(idcard)
                 //         && /^1[3|4|5|8][0-9]\d{4,8}$/.test(phonenumber) ){
-                roomid: {
-                    identifier: 'roomid',
+            EquipmentID: {
+                    identifier: 'EquipmentID',
                     rules: [
                         {
                             type: 'regExp[/^[0-9]{6}$/]',
-                            prompt: '房间号不符合规范'
+                            prompt: 'Invalid EquipmentID'
                         }
                     ]
                 }

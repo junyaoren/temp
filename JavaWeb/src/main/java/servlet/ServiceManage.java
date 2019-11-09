@@ -41,7 +41,7 @@ public class ServiceManage extends HttpServlet {
 //        }else if(op==2) {
 //            response.sendRedirect("/extendReservation.jsp?op=1");
 //        }else if(op==3){
-//            response.sendRedirect("/roomCheckOut.jsp?op=1");
+//            response.sendRedirect("/cancelReservation.jsp?op=1");
 //        }
 //
 //    }

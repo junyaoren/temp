@@ -20,15 +20,15 @@ public class OrderManage extends HttpServlet {
         Map<String, String[]> map = request.getParameterMap();
         String[] values =map.get("op");
         if (values[0].equals("1")) {
-            response.sendRedirect("/orderManagement/bookedOrder.jsp?op=1&pageIndex=0");
+            response.sendRedirect("/orderManagement/inComingReservations.jsp?op=1&pageIndex=0");
         } else if (values[0].equals("2")) {
-            response.sendRedirect("/orderManagement/checkInOrder.jsp?op=2&pageIndex=0");
+            response.sendRedirect("/orderManagement/inUseReservations.jsp?op=2&pageIndex=0");
         } else if (values[0].equals("3")) {
-            response.sendRedirect("/orderManagement/extensionOrder.jsp?op=3&pageIndex=0");
+            response.sendRedirect("/orderManagement/extendedReservations.jsp?op=3&pageIndex=0");
         } else if (values[0].equals("4")) {
-            response.sendRedirect("/orderManagement/historyOrder.jsp?op=4&pageIndex=0");
+            response.sendRedirect("/orderManagement/completedReservations.jsp?op=4&pageIndex=0");
         } else if (values[0].equals("5")) {
-            response.sendRedirect("/orderManagement/allOrder.jsp?op=5&pageIndex=0");
+            response.sendRedirect("/orderManagement/allReservations.jsp?op=5&pageIndex=0");
         }
     }
 }

@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>订单管理</title>
+    <title>Manage Reservations</title>
 
 </head>
 <%@include file="/labMember.jsp"%>

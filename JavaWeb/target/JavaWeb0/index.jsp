@@ -89,12 +89,15 @@
             <div class="field">
               <div class="ui radio checkbox">
                 <input type="radio" name="admin" value="1" checked="checked">
-                <label><i class="users icon"></i>Equip Manager</label>
+                <label><i class="users icon"></i>Lab Member</label>
               </div>
             </div>
           </div>
 
-          <p>(For test purpose, you can directly login with admin)</p>
+          <p>* For test purpose, you can login as below *<br>
+              admin:admin (as administrator) <br>
+            or <br>
+            member:member (as lab member)</p>
 
           <div class="field">
             <div class="ui left icon input">

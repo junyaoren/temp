@@ -10,7 +10,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>续费订单</title>
+    <title>Extended Reservations</title>
     <script>
         function nextPage(maxP) {
 
@@ -61,7 +61,7 @@
             var newPageIndex = parseInt(document.getElementById("pageIndex").value);
 
             if (!isInteger(newPageIndex)) {
-                alert('页码格式有误，请重新输入');
+                alert('Wrong PageNumber, try again!');
                 return;
             }
 
@@ -125,14 +125,14 @@
 <table class="ui sortable celled table">
     <thead>
     <tr class="center aligned">
-        <th class="sorted descending">订单号</th>
-        <th>客户姓名</th>
-        <th>房间</th>
-        <th>入住时间</th>
-        <th>原离店时间</th>
-        <th>新离店时间</th>
-        <th>手机号码</th>
-        <th>补交金额</th>
+        <th class="sorted descending">Reservation Number</th>
+        <th>User</th>
+        <th>EquipmentID</th>
+        <th>StartDate</th>
+        <th>Original EndDate</th>
+        <th>New EndDate</th>
+        <%--<th>手机号码</th>--%>
+        <%--<th>补交金额</th>--%>
     </tr></thead>
 
     <tbody>
@@ -170,16 +170,16 @@
                 out.print(extensionOrderViews.get(i).getNewDate().toString());
             %>
         </td>
-        <td>
-            <%
-                out.print(extensionOrderViews.get(i).getCustomerPhoneNumber());
-            %>
-        </td>
-        <td>
-            <%
-                out.print(extensionOrderViews.get(i).getAddedMoney());
-            %>
-        </td>
+        <%--<td>--%>
+            <%--<%--%>
+                <%--out.print(extensionOrderViews.get(i).getCustomerPhoneNumber());--%>
+            <%--%>--%>
+        <%--</td>--%>
+        <%--<td>--%>
+            <%--<%--%>
+                <%--out.print(extensionOrderViews.get(i).getAddedMoney());--%>
+            <%--%>--%>
+        <%--</td>--%>
     </tr>
     <%}
     %>
@@ -190,37 +190,37 @@
         <th colspan="11">
             <div class="ui right floated pagination menu">
                 <a class="icon item">
-                    <h4>当前页&nbsp;:&nbsp;<%=currentPageNumber%>/<%=maxPageNumber%></h4>
+                    <h4>Page&nbsp;:&nbsp;<%=currentPageNumber%>/<%=maxPageNumber%></h4>
                 </a>
                 <a class="icon item">
                     <div class="ui mini icon input">
-                        <input type="text" placeholder="输入页码" id="pageIndex">
+                        <input type="text" placeholder="go to..." id="pageIndex">
                         <i class="search icon"></i>
                     </div>
                     <a class="icon item" onclick="jump(<%=maxPageNumber%>)">
                         <i class="reply icon"></i>
-                        <label>&nbsp;跳转</label>
+                        <label>&nbsp;jump</label>
                     </a>
                 </a>
                 <%if (!pageIndexNegative) {%>
                 <a class="icon item" onclick="prePage(<%=maxPageNumber%>)">
                     <i class="left chevron icon"></i>
-                    <label>&nbsp;上一页</label>
+                    <label>&nbsp;Prev</label>
                 </a>
                 <%} else {%>
                 <a class="icon item">
                     <i class="smile icon"></i>
-                    <label>第一页</label>
+                    <label>First</label>
                 </a>
                 <%}%>
                 <%if (!pageIndexFlow) {%>
                 <a class="icon item" onclick="nextPage(<%=maxPageNumber%>)">
-                    <label>下一页&nbsp;</label>
+                    <label>Next&nbsp;</label>
                     <i class="right chevron icon"></i>
                 </a>
                 <%} else {%>
                 <a class="icon item">
-                    <label>没有了&nbsp;</label>
+                    <label>End&nbsp;</label>
                     <i class="frown icon"></i>
                 </a>
                 <%}%>
@@ -239,7 +239,7 @@
         <br>
         <br>
         <br>
-        <h1 class="ui red header"><i class="folder open icon"></i>没有续费订单!!!</h1>
+        <h1 class="ui red header"><i class="folder open icon"></i>No Extended Reservations!!!</h1>
     </div>
 </div>
 

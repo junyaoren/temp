@@ -47,14 +47,14 @@
     </style>
     <script >
         function returnMainPage() {
-            window.location.href="/roomCheckOut.jsp?op=1";
+            window.location.href="/cancelReservation.jsp";
         }
         function fun() {
             var roomid =  document.getElementById("roomid").value ;
             var pat1 = /^[0-9]{6}$/ ;
 
             if( pat1.test(roomid) ){
-                window.location.href="/roomCheckOut.jsp?op=2&roomid="+roomid
+                window.location.href="/cancelReservation.jsp?op=2&roomid="+roomid
             }
             return false ;
         }
@@ -199,7 +199,7 @@
                 <div class="ui right button" >
                     <%--<% if(op==2)System.out.println("打印订单编号:"+order.getOrderNumber() );%>--%>
                     <%--<a href="ServiceManage?op=5&orderNumber=<%=order.getOrderNumber()%>">确认退房</a>--%>
-                    <a href="/roomCheckOut.jsp?op=3&orderNumber=<%=order.getOrderNumber()%>">Confirm Check Out</a>
+                    <a href="/cancelReservation.jsp?op=3&orderNumber=<%=order.getOrderNumber()%>">Confirm Check Out</a>
                 </div>
                 <%}else if (op == 3) {
                     String orderNumber= map.get("orderNumber")[0] ;

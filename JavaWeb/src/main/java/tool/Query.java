@@ -501,11 +501,19 @@ public class Query {
 
     //添加新的房间
     public static void insertRoom(Room room) {
+        System.out.println(room);
         Connection connection = null;
         Statement statement = null;
         try {
             connection =  DataBase.getConnection();
             statement = connection.createStatement();
+            String sql = "INSERT INTO room VALUES('" +
+                    room.getRoomNumber() + "', '" +
+                    room.getRoomType() + "', '" +
+                    room.getRoomStatus() + "', '" +
+                    room.getRemarks() + "');";
+
+            System.out.println(sql);
             statement.execute("INSERT INTO room VALUES('" +
                     room.getRoomNumber() + "', '" +
                     room.getRoomType() + "', '" +

@@ -22,7 +22,7 @@ public class RoomManage extends HttpServlet {
         if (values[0].equals(GCON.SEARCH_ROOM)) {
             response.sendRedirect("/roomManagement/searchRoom.jsp");
         } else if (values[0].equals(GCON.ADD_ROOM)) {
-            response.sendRedirect("/roomManagement/roomAdd.jsp?op=" + GCON.ADD_ROOM);
+            response.sendRedirect("/roomManagement/equipAdd.jsp?op=" + GCON.ADD_ROOM);
         } else if (values[0].equals(GCON.EDIT_ROOM)) {
             response.sendRedirect("/roomManagement/roomEdit.jsp?op=" + GCON.EDIT_ROOM);
         } else if (values[0].equals(GCON.DELETE_ROOM)) {

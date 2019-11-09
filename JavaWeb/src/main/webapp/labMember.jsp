@@ -85,7 +85,7 @@
         <div class="menu">
             <a class="item" href="/equipReserve.jsp?op=1"><i class="arrow right icon"></i>New Reservation</a>
             <a class="item" href="/extendReservation.jsp?op=1"><i class="spinner icon"></i>Extend Reservation</a>
-            <a class="item" href="/roomCheckOut.jsp?op=1"><i class="arrow left icon"></i>Cancel Reservation</a>
+            <a class="item" href="/cancelReservation.jsp?op=1"><i class="arrow left icon"></i>Cancel Reservation</a>
         </div>
     </div>
     <div class="ui simple dropdown item">
@@ -93,9 +93,10 @@
         Equipment Management
         <i class="dropdown icon"></i>
         <div class="menu">
-            <a class="item" href="/RoomManage?op=1"><i class="search icon"></i>Find an Equipment</a>
+            <a class="item" href="/roomManagement/reservationDisplay.jsp"><i class="zoom out icon"></i>View Equipments</a>
+            <%--<a class="item" href="/RoomManage?op=1"><i class="search icon"></i>Find an Equipment</a>--%>
             <a class="item" href="/RoomManage?op=2"><i class="plus icon"></i>Add New Equipment</a>
-            <a class="item" href="/roomManagement/roomDisplay.jsp"><i class="zoom out icon"></i>View Equipments</a>
+
         </div>
     </div>
     <div class="ui simple dropdown item">

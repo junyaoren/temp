@@ -1,18 +1,19 @@
 <%@ page import="config.GCON" %>
 <%@ page import="display.OrderView" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="tool.Query" %><%--
+<%@ page import="tool.Query" %>
+<%@ page import="java.util.HashMap" %>
+<%@ page import="java.util.Map" %><%--
   Created by IntelliJ IDEA.
   User: chironyf
   Date: 2017/12/26
-  Time: 09:35
+  Time: 20:18
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <html>
 <head>
-    <title>所有订单</title>
+    <title>All Reservations</title>
     <script>
         function nextPage(maxP) {
 
@@ -63,7 +64,7 @@
             var newPageIndex = parseInt(document.getElementById("pageIndex").value);
 
             if (!isInteger(newPageIndex)) {
-                alert('页码格式有误，请重新输入');
+                alert('Wrong PageNumber, try again!');
                 return;
             }
 
@@ -90,11 +91,10 @@
 
 <%
 
-    ArrayList<OrderView> orderViews = Query.getAllOrderViews("已入住");
+    ArrayList<OrderView> orderViews = Query.getAllOrderViews("");
 
     //如果订单非空
     if (orderViews.size() != 0) {
-//        out.print("size---" + orderViews.size());
 
         int currentOrderSize = orderViews.size();
         //每页显示10条记录
@@ -129,24 +129,27 @@
 %>
 <table class="ui sortable celled table">
     <thead>
-    <tr class="center aligned"><th class="sorted descending">订单号</th>
-        <th>订单状态</th>
-        <th>客户姓名</th>
-        <th>创建时间</th>
-        <th>预定房间</th>
-        <th>房间类型</th>
-        <th>入住时间</th>
-        <th>离店时间</th>
-        <th>入住天数</th>
-        <th>手机号码</th>
-        <th>价格</th>
+    <tr class="center aligned"><th class="sorted descending">Reservation Number</th>
+        <th>Reservation Status</th>
+        <th>User</th>
+        <th>Created-at</th>
+        <th>EquipmentID</th>
+        <th>EquipmentType</th>
+        <th>StartDate</th>
+        <th>EndDate</th>
+        <th>Length</th>
+        <%--<th>手机号码</th>--%>
+        <%--<th>价格</th>--%>
     </tr></thead>
 
     <tbody>
 
     <%
+        Map<String, String> statusMap = new HashMap<>();
+        statusMap.put("已退房", "Completed");
+        statusMap.put("已入住", "In-Use");
         for (int i = startIndex; i <= endIndex; i++) {
-            if (true) {
+          if (true) {
     %>
     <tr class="center aligned">
         <td>
@@ -156,7 +159,7 @@
         </td>
         <td>
             <%
-                out.print(orderViews.get(i).getOrderStatus());
+                out.print(statusMap.get(orderViews.get(i).getOrderStatus()));
             %>
         </td>
         <td>
@@ -194,16 +197,16 @@
                 out.print(orderViews.get(i).getDays());
             %>
         </td>
-        <td>
-            <%
-                out.print(orderViews.get(i).getCustomerPhoneNumber());
-            %>
-        </td>
-        <td>
-            <%
-                out.print(orderViews.get(i).getPrice());
-            %>
-        </td>
+        <%--<td>--%>
+            <%--<%--%>
+                <%--out.print(orderViews.get(i).getCustomerPhoneNumber());--%>
+            <%--%>--%>
+        <%--</td>--%>
+        <%--<td>--%>
+            <%--<%--%>
+                <%--out.print(orderViews.get(i).getPrice());--%>
+            <%--%>--%>
+        <%--</td>--%>
 
     </tr>
     <%}
@@ -216,37 +219,37 @@
         <th colspan="11">
             <div class="ui right floated pagination menu">
                 <a class="icon item">
-                    <h4>当前页&nbsp;:&nbsp;<%=currentPageNumber%>/<%=maxPageNumber%></h4>
+                    <h4>Page&nbsp;:&nbsp;<%=currentPageNumber%>/<%=maxPageNumber%></h4>
                 </a>
                 <a class="icon item">
                     <div class="ui mini icon input">
-                        <input type="text" placeholder="输入页码" id="pageIndex">
+                        <input type="text" placeholder="go to..." id="pageIndex">
                         <i class="search icon"></i>
                     </div>
                     <a class="icon item" onclick="jump(<%=maxPageNumber%>)">
                         <i class="reply icon"></i>
-                        <label>&nbsp;跳转</label>
+                        <label>&nbsp;jump</label>
                     </a>
                 </a>
                 <%if (!pageIndexNegative) {%>
                 <a class="icon item" onclick="prePage(<%=maxPageNumber%>)">
                     <i class="left chevron icon"></i>
-                    <label>&nbsp;上一页</label>
+                    <label>&nbsp;Prev</label>
                 </a>
                 <%} else {%>
                 <a class="icon item">
                     <i class="smile icon"></i>
-                    <label>第一页</label>
+                    <label>First</label>
                 </a>
                 <%}%>
                 <%if (!pageIndexFlow) {%>
                 <a class="icon item" onclick="nextPage(<%=maxPageNumber%>)">
-                    <label>下一页&nbsp;</label>
+                    <label>Next&nbsp;</label>
                     <i class="right chevron icon"></i>
                 </a>
                 <%} else {%>
                 <a class="icon item">
-                    <label>没有了&nbsp;</label>
+                    <label>End&nbsp;</label>
                     <i class="frown icon"></i>
                 </a>
                 <%}%>
@@ -265,7 +268,7 @@
         <br>
         <br>
         <br>
-        <h1 class="ui red header"><i class="folder open icon"></i>没有入住订单!!!</h1>
+        <h1 class="ui red header"><i class="folder open icon"></i>No Reservations!!!</h1>
     </div>
 </div>
 

@@ -17,94 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="labMember.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/labMember.jsp">
+      <file leaf-file-name="cancelReservation.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/cancelReservation.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
-              <caret line="78" column="30" lean-forward="false" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+            <state relative-caret-position="193">
+              <caret line="56" column="39" lean-forward="false" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Query.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tool/Query.java">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="199" column="0" lean-forward="false" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
-              <folding>
-                <marker date="1573256308295" expanded="true" signature="671:818" ph="select * fro... roomType" />
-                <marker date="1573256308295" expanded="true" signature="687:762" ph="select roomT... room" />
-                <marker date="1573256308295" expanded="true" signature="1095:1243" ph="select * fro... roomType" />
-                <marker date="1573256308295" expanded="true" signature="1111:1186" ph="select roomT... room" />
-                <marker date="1573256308295" expanded="true" signature="1997:2073" ph="select * fro... orderviews" />
-                <marker date="1573256308295" expanded="true" signature="3651:3716" ph="DELETE FROM waiter" />
-                <marker date="1573256308295" expanded="true" signature="4109:4218" ph="UPDATE waiter... " />
-                <marker date="1573256308295" expanded="true" signature="4253:4359" ph="UPDATE waiter... " />
-                <marker date="1573256308295" expanded="true" signature="4394:4507" ph="UPDATE waiter... " />
-                <marker date="1573256308295" expanded="true" signature="4542:4655" ph="UPDATE waiter... " />
-                <marker date="1573256308295" expanded="true" signature="4690:4803" ph="UPDATE waiter... " />
-                <marker date="1573256308295" expanded="true" signature="4838:4956" ph="UPDATE waiter... " />
-                <marker date="1573256308295" expanded="true" signature="4991:5089" ph="UPDATE waiter... " />
-                <marker date="1573256308295" expanded="true" signature="5586:5610" ph="select * fro... incomeView" />
-                <marker date="1573256308295" expanded="true" signature="6428:6478" ph="select * fro... waiter" />
-                <marker date="1573256308295" expanded="true" signature="7649:7679" ph="select * fro... roomtypeandprice" />
-                <marker date="1573256308295" expanded="true" signature="8865:8920" ph="select * fro... room" />
-                <marker date="1573256308295" expanded="true" signature="8997:9015" ph="select * fro... room" />
-                <marker date="1573256308295" expanded="true" signature="9058:9101" ph="select * fro... room" />
-                <marker date="1573256308295" expanded="true" signature="10050:10099" ph="select roomN... room" />
-                <marker date="1573256308295" expanded="true" signature="10824:10900" ph="select roomN... room" />
-                <marker date="1573256308295" expanded="true" signature="16035:16270" ph="INSERT INTO systemAdministrator... " />
-                <marker date="1573256308295" expanded="true" signature="18604:18628" ph="select * fro... orderviews" />
-                <marker date="1573256308295" expanded="true" signature="18718:18784" ph="select * fro... orderviews" />
-                <marker date="1573256308295" expanded="true" signature="20424:20650" ph="INSERT INTO room... " />
-                <marker date="1573256308295" expanded="true" signature="21419:21577" ph="select * fro... roomtypeandprice" />
-                <marker date="1573256308295" expanded="true" signature="21712:21835" ph="select * fro... roomtypeandprice" />
-                <marker date="1573256308295" expanded="true" signature="22722:22756" ph="select count... timeextension" />
-                <marker date="1573256308295" expanded="true" signature="23416:23496" ph="update orders... " />
-                <marker date="1573256308295" expanded="true" signature="23931:24150" ph="insert into timeextension... " />
-                <marker date="1573256308295" expanded="true" signature="24640:24695" ph="select roomT... room" />
-                <marker date="1573256308295" expanded="true" signature="25329:25400" ph="update orders... " />
-                <marker date="1573256308295" expanded="true" signature="25875:25947" ph="select * fro... orders" />
-                <marker date="1573256308295" expanded="true" signature="27093:27120" ph="select count... orders" />
-                <marker date="1573256308295" expanded="true" signature="27737:27797" ph="select price... roomtypeandprice" />
-                <marker date="1573256308295" expanded="true" signature="28413:28750" ph="INSERT INTO Customers... " />
-                <marker date="1573256308295" expanded="true" signature="29234:29276" ph="select disco... viplevel" />
-                <marker date="1573256308295" expanded="true" signature="29902:29971" ph="select custo... customers" />
-                <marker date="1573256308295" expanded="true" signature="30632:30685" ph="select * fro... Customers" />
-                <marker date="1573256308295" expanded="true" signature="31321:31883" ph="INSERT INTO orders... " />
-                <marker date="1573256308295" expanded="true" signature="32515:32552" ph="SELECT * FRO... timeExtensionOrdersView" />
-                <marker date="1573256308295" expanded="true" signature="33943:34416" ph="INSERT INTO waiter... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="roomDisplay.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/roomManagement/roomDisplay.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="139" column="44" lean-forward="false" selection-start-line="139" selection-start-column="44" selection-end-line="139" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Room.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entity/Room.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="49" column="11" lean-forward="false" selection-start-line="45" selection-start-column="10" selection-end-line="49" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="equipReserve.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/equipReserve.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="143" column="128" lean-forward="false" selection-start-line="143" selection-start-column="119" selection-end-line="143" selection-end-column="128" />
+            <state relative-caret-position="251">
+              <caret line="99" column="40" lean-forward="false" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -126,11 +53,14 @@
       <find>returnMainPage</find>
       <find>equip</find>
       <find>hours</find>
-      <find>roomid</find>
       <find>rs1</find>
       <find>size1</find>
       <find>type</find>
       <find>空</find>
+      <find>roomid</find>
+      <find>roomNumber</find>
+      <find>roomnumber</find>
+      <find>Equipmenttype</find>
     </findStrings>
     <replaceStrings>
       <replace>labmember</replace>
@@ -148,17 +78,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/servlet/ServiceManage.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/roomOrder.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/labMember.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/equipReserve.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/extendReservation.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/roomCheckOut.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/config/GCON.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tool/Query.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/Room.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/roomManagement/roomDisplay.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/labMember.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/roomManagement/roomAdd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Room.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tool/Query.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/roomManagement/equipAdd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/orderManagement/allOrder.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/orderManagement/orderManage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/orderManagement/allReservations.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/orderManagement/extensionOrder.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/orderManagement/bookedOrder.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/orderManagement/checkInOrder.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/orderManagement/historyOrder.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/servlet/OrderManage.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/cancelReservation.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
       </list>
     </option>
   </component>
@@ -175,10 +116,10 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="35" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="40" />
     <option name="y" value="23" />
-    <option name="width" value="1645" />
+    <option name="width" value="1640" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectView">
@@ -196,6 +137,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,9 +215,8 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -468,41 +409,42 @@
       <workItem from="1573162460453" duration="911000" />
       <workItem from="1573167116017" duration="9798000" />
       <workItem from="1573246371872" duration="3771000" />
+      <workItem from="1573289954521" duration="6669000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15302000" />
+    <option name="totallyTimeSpent" value="21971000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="40" y="23" width="1640" height="1027" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285568" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285568" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Style Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25579977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285568" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32832617" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32832617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Style Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26533166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32832617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -529,6 +471,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tool/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2865">
+          <caret line="199" column="0" lean-forward="false" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
+          <folding>
+            <marker date="1573292641623" expanded="true" signature="671:818" ph="select * fro... roomType" />
+            <marker date="1573292641623" expanded="true" signature="687:762" ph="select roomT... room" />
+            <marker date="1573292641623" expanded="true" signature="1095:1243" ph="select * fro... roomType" />
+            <marker date="1573292641623" expanded="true" signature="1111:1186" ph="select roomT... room" />
+            <marker date="1573292641623" expanded="true" signature="1997:2073" ph="select * fro... orderviews" />
+            <marker date="1573292641623" expanded="true" signature="3651:3716" ph="DELETE FROM waiter" />
+            <marker date="1573292641623" expanded="true" signature="4109:4218" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4253:4359" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4394:4507" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4542:4655" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4690:4803" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4838:4956" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4991:5089" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="5586:5610" ph="select * fro... incomeView" />
+            <marker date="1573292641623" expanded="true" signature="6428:6478" ph="select * fro... waiter" />
+            <marker date="1573292641623" expanded="true" signature="7649:7679" ph="select * fro... roomtypeandprice" />
+            <marker date="1573292641623" expanded="true" signature="8865:8920" ph="select * fro... room" />
+            <marker date="1573292641623" expanded="true" signature="8997:9015" ph="select * fro... room" />
+            <marker date="1573292641623" expanded="true" signature="9058:9101" ph="select * fro... room" />
+            <marker date="1573292641623" expanded="true" signature="10050:10099" ph="select roomN... room" />
+            <marker date="1573292641623" expanded="true" signature="10824:10900" ph="select roomN... room" />
+            <marker date="1573292641623" expanded="true" signature="16035:16270" ph="INSERT INTO systemAdministrator... " />
+            <marker date="1573292641623" expanded="true" signature="18604:18628" ph="select * fro... orderviews" />
+            <marker date="1573292641623" expanded="true" signature="18718:18784" ph="select * fro... orderviews" />
+            <marker date="1573292641623" expanded="true" signature="20752:20978" ph="INSERT INTO room... " />
+            <marker date="1573292641623" expanded="true" signature="21747:21905" ph="select * fro... roomtypeandprice" />
+            <marker date="1573292641623" expanded="true" signature="22040:22163" ph="select * fro... roomtypeandprice" />
+            <marker date="1573292641623" expanded="true" signature="23050:23084" ph="select count... timeextension" />
+            <marker date="1573292641623" expanded="true" signature="23744:23824" ph="update orders... " />
+            <marker date="1573292641623" expanded="true" signature="24259:24478" ph="insert into timeextension... " />
+            <marker date="1573292641623" expanded="true" signature="24968:25023" ph="select roomT... room" />
+            <marker date="1573292641623" expanded="true" signature="25657:25728" ph="update orders... " />
+            <marker date="1573292641623" expanded="true" signature="26203:26275" ph="select * fro... orders" />
+            <marker date="1573292641623" expanded="true" signature="27421:27448" ph="select count... orders" />
+            <marker date="1573292641623" expanded="true" signature="28065:28125" ph="select price... roomtypeandprice" />
+            <marker date="1573292641623" expanded="true" signature="28741:29078" ph="INSERT INTO Customers... " />
+            <marker date="1573292641623" expanded="true" signature="29562:29604" ph="select disco... viplevel" />
+            <marker date="1573292641623" expanded="true" signature="30230:30299" ph="select custo... customers" />
+            <marker date="1573292641623" expanded="true" signature="30960:31013" ph="select * fro... Customers" />
+            <marker date="1573292641623" expanded="true" signature="31649:32211" ph="INSERT INTO orders... " />
+            <marker date="1573292641623" expanded="true" signature="32843:32880" ph="SELECT * FRO... timeExtensionOrdersView" />
+            <marker date="1573292641623" expanded="true" signature="34271:34744" ph="INSERT INTO waiter... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/roomManagement/reservationDisplay.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2085">
+          <caret line="139" column="44" lean-forward="false" selection-start-line="139" selection-start-column="44" selection-end-line="139" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="49" column="11" lean-forward="false" selection-start-line="45" selection-start-column="10" selection-end-line="49" selection-end-column="11" />
+          <folding>
+            <element signature="e#866#867#0" expanded="false" />
+            <element signature="e#910#911#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/equipReserve.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2145">
+          <caret line="143" column="128" lean-forward="false" selection-start-line="143" selection-start-column="119" selection-end-line="143" selection-end-column="128" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/labMember.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/extendReservation.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1335">
@@ -542,48 +570,48 @@
         <state relative-caret-position="12060">
           <caret line="812" column="0" lean-forward="false" selection-start-line="812" selection-start-column="0" selection-end-line="812" selection-end-column="0" />
           <folding>
-            <marker date="1573256308295" expanded="true" signature="671:818" ph="select * fro... roomType" />
-            <marker date="1573256308295" expanded="true" signature="687:762" ph="select roomT... room" />
-            <marker date="1573256308295" expanded="true" signature="1095:1243" ph="select * fro... roomType" />
-            <marker date="1573256308295" expanded="true" signature="1111:1186" ph="select roomT... room" />
-            <marker date="1573256308295" expanded="true" signature="1997:2073" ph="select * fro... orderviews" />
-            <marker date="1573256308295" expanded="true" signature="3651:3716" ph="DELETE FROM waiter" />
-            <marker date="1573256308295" expanded="true" signature="4109:4218" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="4253:4359" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="4394:4507" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="4542:4655" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="4690:4803" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="4838:4956" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="4991:5089" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="5586:5610" ph="select * fro... incomeView" />
-            <marker date="1573256308295" expanded="true" signature="6428:6478" ph="select * fro... waiter" />
-            <marker date="1573256308295" expanded="true" signature="7649:7679" ph="select * fro... roomtypeandprice" />
-            <marker date="1573256308295" expanded="true" signature="8865:8920" ph="select * fro... room" />
-            <marker date="1573256308295" expanded="true" signature="8997:9015" ph="select * fro... room" />
-            <marker date="1573256308295" expanded="true" signature="9058:9101" ph="select * fro... room" />
-            <marker date="1573256308295" expanded="true" signature="10050:10099" ph="select roomN... room" />
-            <marker date="1573256308295" expanded="true" signature="10824:10900" ph="select roomN... room" />
-            <marker date="1573256308295" expanded="true" signature="16035:16270" ph="INSERT INTO systemAdministrator... " />
-            <marker date="1573256308295" expanded="true" signature="18604:18628" ph="select * fro... orderviews" />
-            <marker date="1573256308295" expanded="true" signature="18718:18784" ph="select * fro... orderviews" />
-            <marker date="1573256308295" expanded="true" signature="20424:20650" ph="INSERT INTO room... " />
-            <marker date="1573256308295" expanded="true" signature="21419:21577" ph="select * fro... roomtypeandprice" />
-            <marker date="1573256308295" expanded="true" signature="21712:21835" ph="select * fro... roomtypeandprice" />
-            <marker date="1573256308295" expanded="true" signature="22722:22756" ph="select count... timeextension" />
-            <marker date="1573256308295" expanded="true" signature="23416:23496" ph="update orders... " />
-            <marker date="1573256308295" expanded="true" signature="23931:24150" ph="insert into timeextension... " />
-            <marker date="1573256308295" expanded="true" signature="24640:24695" ph="select roomT... room" />
-            <marker date="1573256308295" expanded="true" signature="25329:25400" ph="update orders... " />
-            <marker date="1573256308295" expanded="true" signature="25875:25947" ph="select * fro... orders" />
-            <marker date="1573256308295" expanded="true" signature="27093:27120" ph="select count... orders" />
-            <marker date="1573256308295" expanded="true" signature="27737:27797" ph="select price... roomtypeandprice" />
-            <marker date="1573256308295" expanded="true" signature="28413:28750" ph="INSERT INTO Customers... " />
-            <marker date="1573256308295" expanded="true" signature="29234:29276" ph="select disco... viplevel" />
-            <marker date="1573256308295" expanded="true" signature="29902:29971" ph="select custo... customers" />
-            <marker date="1573256308295" expanded="true" signature="30632:30685" ph="select * fro... Customers" />
-            <marker date="1573256308295" expanded="true" signature="31321:31883" ph="INSERT INTO orders... " />
-            <marker date="1573256308295" expanded="true" signature="32515:32552" ph="SELECT * FRO... timeExtensionOrdersView" />
-            <marker date="1573256308295" expanded="true" signature="33943:34416" ph="INSERT INTO waiter... " />
+            <marker date="1573292641623" expanded="true" signature="671:818" ph="select * fro... roomType" />
+            <marker date="1573292641623" expanded="true" signature="687:762" ph="select roomT... room" />
+            <marker date="1573292641623" expanded="true" signature="1095:1243" ph="select * fro... roomType" />
+            <marker date="1573292641623" expanded="true" signature="1111:1186" ph="select roomT... room" />
+            <marker date="1573292641623" expanded="true" signature="1997:2073" ph="select * fro... orderviews" />
+            <marker date="1573292641623" expanded="true" signature="3651:3716" ph="DELETE FROM waiter" />
+            <marker date="1573292641623" expanded="true" signature="4109:4218" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4253:4359" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4394:4507" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4542:4655" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4690:4803" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4838:4956" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4991:5089" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="5586:5610" ph="select * fro... incomeView" />
+            <marker date="1573292641623" expanded="true" signature="6428:6478" ph="select * fro... waiter" />
+            <marker date="1573292641623" expanded="true" signature="7649:7679" ph="select * fro... roomtypeandprice" />
+            <marker date="1573292641623" expanded="true" signature="8865:8920" ph="select * fro... room" />
+            <marker date="1573292641623" expanded="true" signature="8997:9015" ph="select * fro... room" />
+            <marker date="1573292641623" expanded="true" signature="9058:9101" ph="select * fro... room" />
+            <marker date="1573292641623" expanded="true" signature="10050:10099" ph="select roomN... room" />
+            <marker date="1573292641623" expanded="true" signature="10824:10900" ph="select roomN... room" />
+            <marker date="1573292641623" expanded="true" signature="16035:16270" ph="INSERT INTO systemAdministrator... " />
+            <marker date="1573292641623" expanded="true" signature="18604:18628" ph="select * fro... orderviews" />
+            <marker date="1573292641623" expanded="true" signature="18718:18784" ph="select * fro... orderviews" />
+            <marker date="1573292641623" expanded="true" signature="20752:20978" ph="INSERT INTO room... " />
+            <marker date="1573292641623" expanded="true" signature="21747:21905" ph="select * fro... roomtypeandprice" />
+            <marker date="1573292641623" expanded="true" signature="22040:22163" ph="select * fro... roomtypeandprice" />
+            <marker date="1573292641623" expanded="true" signature="23050:23084" ph="select count... timeextension" />
+            <marker date="1573292641623" expanded="true" signature="23744:23824" ph="update orders... " />
+            <marker date="1573292641623" expanded="true" signature="24259:24478" ph="insert into timeextension... " />
+            <marker date="1573292641623" expanded="true" signature="24968:25023" ph="select roomT... room" />
+            <marker date="1573292641623" expanded="true" signature="25657:25728" ph="update orders... " />
+            <marker date="1573292641623" expanded="true" signature="26203:26275" ph="select * fro... orders" />
+            <marker date="1573292641623" expanded="true" signature="27421:27448" ph="select count... orders" />
+            <marker date="1573292641623" expanded="true" signature="28065:28125" ph="select price... roomtypeandprice" />
+            <marker date="1573292641623" expanded="true" signature="28741:29078" ph="INSERT INTO Customers... " />
+            <marker date="1573292641623" expanded="true" signature="29562:29604" ph="select disco... viplevel" />
+            <marker date="1573292641623" expanded="true" signature="30230:30299" ph="select custo... customers" />
+            <marker date="1573292641623" expanded="true" signature="30960:31013" ph="select * fro... Customers" />
+            <marker date="1573292641623" expanded="true" signature="31649:32211" ph="INSERT INTO orders... " />
+            <marker date="1573292641623" expanded="true" signature="32843:32880" ph="SELECT * FRO... timeExtensionOrdersView" />
+            <marker date="1573292641623" expanded="true" signature="34271:34744" ph="INSERT INTO waiter... " />
           </folding>
         </state>
       </provider>
@@ -675,48 +703,48 @@
         <state relative-caret-position="6870">
           <caret line="466" column="41" lean-forward="false" selection-start-line="466" selection-start-column="24" selection-end-line="466" selection-end-column="41" />
           <folding>
-            <marker date="1573256308295" expanded="true" signature="671:818" ph="select * fro... roomType" />
-            <marker date="1573256308295" expanded="true" signature="687:762" ph="select roomT... room" />
-            <marker date="1573256308295" expanded="true" signature="1095:1243" ph="select * fro... roomType" />
-            <marker date="1573256308295" expanded="true" signature="1111:1186" ph="select roomT... room" />
-            <marker date="1573256308295" expanded="true" signature="1997:2073" ph="select * fro... orderviews" />
-            <marker date="1573256308295" expanded="true" signature="3651:3716" ph="DELETE FROM waiter" />
-            <marker date="1573256308295" expanded="true" signature="4109:4218" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="4253:4359" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="4394:4507" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="4542:4655" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="4690:4803" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="4838:4956" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="4991:5089" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="5586:5610" ph="select * fro... incomeView" />
-            <marker date="1573256308295" expanded="true" signature="6428:6478" ph="select * fro... waiter" />
-            <marker date="1573256308295" expanded="true" signature="7649:7679" ph="select * fro... roomtypeandprice" />
-            <marker date="1573256308295" expanded="true" signature="8865:8920" ph="select * fro... room" />
-            <marker date="1573256308295" expanded="true" signature="8997:9015" ph="select * fro... room" />
-            <marker date="1573256308295" expanded="true" signature="9058:9101" ph="select * fro... room" />
-            <marker date="1573256308295" expanded="true" signature="10050:10099" ph="select roomN... room" />
-            <marker date="1573256308295" expanded="true" signature="10824:10900" ph="select roomN... room" />
-            <marker date="1573256308295" expanded="true" signature="16035:16270" ph="INSERT INTO systemAdministrator... " />
-            <marker date="1573256308295" expanded="true" signature="18604:18628" ph="select * fro... orderviews" />
-            <marker date="1573256308295" expanded="true" signature="18718:18784" ph="select * fro... orderviews" />
-            <marker date="1573256308295" expanded="true" signature="20424:20650" ph="INSERT INTO room... " />
-            <marker date="1573256308295" expanded="true" signature="21419:21577" ph="select * fro... roomtypeandprice" />
-            <marker date="1573256308295" expanded="true" signature="21712:21835" ph="select * fro... roomtypeandprice" />
-            <marker date="1573256308295" expanded="true" signature="22722:22756" ph="select count... timeextension" />
-            <marker date="1573256308295" expanded="true" signature="23416:23496" ph="update orders... " />
-            <marker date="1573256308295" expanded="true" signature="23931:24150" ph="insert into timeextension... " />
-            <marker date="1573256308295" expanded="true" signature="24640:24695" ph="select roomT... room" />
-            <marker date="1573256308295" expanded="true" signature="25329:25400" ph="update orders... " />
-            <marker date="1573256308295" expanded="true" signature="25875:25947" ph="select * fro... orders" />
-            <marker date="1573256308295" expanded="true" signature="27093:27120" ph="select count... orders" />
-            <marker date="1573256308295" expanded="true" signature="27737:27797" ph="select price... roomtypeandprice" />
-            <marker date="1573256308295" expanded="true" signature="28413:28750" ph="INSERT INTO Customers... " />
-            <marker date="1573256308295" expanded="true" signature="29234:29276" ph="select disco... viplevel" />
-            <marker date="1573256308295" expanded="true" signature="29902:29971" ph="select custo... customers" />
-            <marker date="1573256308295" expanded="true" signature="30632:30685" ph="select * fro... Customers" />
-            <marker date="1573256308295" expanded="true" signature="31321:31883" ph="INSERT INTO orders... " />
-            <marker date="1573256308295" expanded="true" signature="32515:32552" ph="SELECT * FRO... timeExtensionOrdersView" />
-            <marker date="1573256308295" expanded="true" signature="33943:34416" ph="INSERT INTO waiter... " />
+            <marker date="1573292641623" expanded="true" signature="671:818" ph="select * fro... roomType" />
+            <marker date="1573292641623" expanded="true" signature="687:762" ph="select roomT... room" />
+            <marker date="1573292641623" expanded="true" signature="1095:1243" ph="select * fro... roomType" />
+            <marker date="1573292641623" expanded="true" signature="1111:1186" ph="select roomT... room" />
+            <marker date="1573292641623" expanded="true" signature="1997:2073" ph="select * fro... orderviews" />
+            <marker date="1573292641623" expanded="true" signature="3651:3716" ph="DELETE FROM waiter" />
+            <marker date="1573292641623" expanded="true" signature="4109:4218" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4253:4359" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4394:4507" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4542:4655" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4690:4803" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4838:4956" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4991:5089" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="5586:5610" ph="select * fro... incomeView" />
+            <marker date="1573292641623" expanded="true" signature="6428:6478" ph="select * fro... waiter" />
+            <marker date="1573292641623" expanded="true" signature="7649:7679" ph="select * fro... roomtypeandprice" />
+            <marker date="1573292641623" expanded="true" signature="8865:8920" ph="select * fro... room" />
+            <marker date="1573292641623" expanded="true" signature="8997:9015" ph="select * fro... room" />
+            <marker date="1573292641623" expanded="true" signature="9058:9101" ph="select * fro... room" />
+            <marker date="1573292641623" expanded="true" signature="10050:10099" ph="select roomN... room" />
+            <marker date="1573292641623" expanded="true" signature="10824:10900" ph="select roomN... room" />
+            <marker date="1573292641623" expanded="true" signature="16035:16270" ph="INSERT INTO systemAdministrator... " />
+            <marker date="1573292641623" expanded="true" signature="18604:18628" ph="select * fro... orderviews" />
+            <marker date="1573292641623" expanded="true" signature="18718:18784" ph="select * fro... orderviews" />
+            <marker date="1573292641623" expanded="true" signature="20752:20978" ph="INSERT INTO room... " />
+            <marker date="1573292641623" expanded="true" signature="21747:21905" ph="select * fro... roomtypeandprice" />
+            <marker date="1573292641623" expanded="true" signature="22040:22163" ph="select * fro... roomtypeandprice" />
+            <marker date="1573292641623" expanded="true" signature="23050:23084" ph="select count... timeextension" />
+            <marker date="1573292641623" expanded="true" signature="23744:23824" ph="update orders... " />
+            <marker date="1573292641623" expanded="true" signature="24259:24478" ph="insert into timeextension... " />
+            <marker date="1573292641623" expanded="true" signature="24968:25023" ph="select roomT... room" />
+            <marker date="1573292641623" expanded="true" signature="25657:25728" ph="update orders... " />
+            <marker date="1573292641623" expanded="true" signature="26203:26275" ph="select * fro... orders" />
+            <marker date="1573292641623" expanded="true" signature="27421:27448" ph="select count... orders" />
+            <marker date="1573292641623" expanded="true" signature="28065:28125" ph="select price... roomtypeandprice" />
+            <marker date="1573292641623" expanded="true" signature="28741:29078" ph="INSERT INTO Customers... " />
+            <marker date="1573292641623" expanded="true" signature="29562:29604" ph="select disco... viplevel" />
+            <marker date="1573292641623" expanded="true" signature="30230:30299" ph="select custo... customers" />
+            <marker date="1573292641623" expanded="true" signature="30960:31013" ph="select * fro... Customers" />
+            <marker date="1573292641623" expanded="true" signature="31649:32211" ph="INSERT INTO orders... " />
+            <marker date="1573292641623" expanded="true" signature="32843:32880" ph="SELECT * FRO... timeExtensionOrdersView" />
+            <marker date="1573292641623" expanded="true" signature="34271:34744" ph="INSERT INTO waiter... " />
           </folding>
         </state>
       </provider>
@@ -752,7 +780,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-300">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,26 +816,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="81" column="52" lean-forward="false" selection-start-line="81" selection-start-column="52" selection-end-line="81" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/systemManagement/statistics.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4806">
           <caret line="57" column="48" lean-forward="false" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/roomCheckOut.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -837,69 +848,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/labMember.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/roomManagement/reservationDisplay.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="78" column="30" lean-forward="false" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+        <state relative-caret-position="405">
+          <caret line="139" column="44" lean-forward="false" selection-start-line="139" selection-start-column="44" selection-end-line="139" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/roomManagement/searchRoom.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-41">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tool/Query.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/labMember.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="199" column="0" lean-forward="false" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
+        <state relative-caret-position="336">
+          <caret line="94" column="26" lean-forward="false" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/roomManagement/equipAdd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="81" column="45" lean-forward="false" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
-            <marker date="1573256308295" expanded="true" signature="671:818" ph="select * fro... roomType" />
-            <marker date="1573256308295" expanded="true" signature="687:762" ph="select roomT... room" />
-            <marker date="1573256308295" expanded="true" signature="1095:1243" ph="select * fro... roomType" />
-            <marker date="1573256308295" expanded="true" signature="1111:1186" ph="select roomT... room" />
-            <marker date="1573256308295" expanded="true" signature="1997:2073" ph="select * fro... orderviews" />
-            <marker date="1573256308295" expanded="true" signature="3651:3716" ph="DELETE FROM waiter" />
-            <marker date="1573256308295" expanded="true" signature="4109:4218" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="4253:4359" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="4394:4507" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="4542:4655" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="4690:4803" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="4838:4956" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="4991:5089" ph="UPDATE waiter... " />
-            <marker date="1573256308295" expanded="true" signature="5586:5610" ph="select * fro... incomeView" />
-            <marker date="1573256308295" expanded="true" signature="6428:6478" ph="select * fro... waiter" />
-            <marker date="1573256308295" expanded="true" signature="7649:7679" ph="select * fro... roomtypeandprice" />
-            <marker date="1573256308295" expanded="true" signature="8865:8920" ph="select * fro... room" />
-            <marker date="1573256308295" expanded="true" signature="8997:9015" ph="select * fro... room" />
-            <marker date="1573256308295" expanded="true" signature="9058:9101" ph="select * fro... room" />
-            <marker date="1573256308295" expanded="true" signature="10050:10099" ph="select roomN... room" />
-            <marker date="1573256308295" expanded="true" signature="10824:10900" ph="select roomN... room" />
-            <marker date="1573256308295" expanded="true" signature="16035:16270" ph="INSERT INTO systemAdministrator... " />
-            <marker date="1573256308295" expanded="true" signature="18604:18628" ph="select * fro... orderviews" />
-            <marker date="1573256308295" expanded="true" signature="18718:18784" ph="select * fro... orderviews" />
-            <marker date="1573256308295" expanded="true" signature="20424:20650" ph="INSERT INTO room... " />
-            <marker date="1573256308295" expanded="true" signature="21419:21577" ph="select * fro... roomtypeandprice" />
-            <marker date="1573256308295" expanded="true" signature="21712:21835" ph="select * fro... roomtypeandprice" />
-            <marker date="1573256308295" expanded="true" signature="22722:22756" ph="select count... timeextension" />
-            <marker date="1573256308295" expanded="true" signature="23416:23496" ph="update orders... " />
-            <marker date="1573256308295" expanded="true" signature="23931:24150" ph="insert into timeextension... " />
-            <marker date="1573256308295" expanded="true" signature="24640:24695" ph="select roomT... room" />
-            <marker date="1573256308295" expanded="true" signature="25329:25400" ph="update orders... " />
-            <marker date="1573256308295" expanded="true" signature="25875:25947" ph="select * fro... orders" />
-            <marker date="1573256308295" expanded="true" signature="27093:27120" ph="select count... orders" />
-            <marker date="1573256308295" expanded="true" signature="27737:27797" ph="select price... roomtypeandprice" />
-            <marker date="1573256308295" expanded="true" signature="28413:28750" ph="INSERT INTO Customers... " />
-            <marker date="1573256308295" expanded="true" signature="29234:29276" ph="select disco... viplevel" />
-            <marker date="1573256308295" expanded="true" signature="29902:29971" ph="select custo... customers" />
-            <marker date="1573256308295" expanded="true" signature="30632:30685" ph="select * fro... Customers" />
-            <marker date="1573256308295" expanded="true" signature="31321:31883" ph="INSERT INTO orders... " />
-            <marker date="1573256308295" expanded="true" signature="32515:32552" ph="SELECT * FRO... timeExtensionOrdersView" />
-            <marker date="1573256308295" expanded="true" signature="33943:34416" ph="INSERT INTO waiter... " />
+            <element signature="e#866#867#0" expanded="false" />
+            <element signature="e#910#911#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -912,18 +899,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Room.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tool/Query.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="49" column="11" lean-forward="false" selection-start-line="45" selection-start-column="10" selection-end-line="49" selection-end-column="11" />
+        <state relative-caret-position="200">
+          <caret line="502" column="23" lean-forward="false" selection-start-line="502" selection-start-column="23" selection-end-line="502" selection-end-column="23" />
+          <folding>
+            <marker date="1573292641623" expanded="true" signature="671:818" ph="select * fro... roomType" />
+            <marker date="1573292641623" expanded="true" signature="687:762" ph="select roomT... room" />
+            <marker date="1573292641623" expanded="true" signature="1095:1243" ph="select * fro... roomType" />
+            <marker date="1573292641623" expanded="true" signature="1111:1186" ph="select roomT... room" />
+            <marker date="1573292641623" expanded="true" signature="1997:2073" ph="select * fro... orderviews" />
+            <marker date="1573292641623" expanded="true" signature="3651:3716" ph="DELETE FROM waiter" />
+            <marker date="1573292641623" expanded="true" signature="4109:4218" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4253:4359" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4394:4507" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4542:4655" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4690:4803" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4838:4956" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="4991:5089" ph="UPDATE waiter... " />
+            <marker date="1573292641623" expanded="true" signature="5586:5610" ph="select * fro... incomeView" />
+            <marker date="1573292641623" expanded="true" signature="6428:6478" ph="select * fro... waiter" />
+            <marker date="1573292641623" expanded="true" signature="7649:7679" ph="select * fro... roomtypeandprice" />
+            <marker date="1573292641623" expanded="true" signature="8865:8920" ph="select * fro... room" />
+            <marker date="1573292641623" expanded="true" signature="8997:9015" ph="select * fro... room" />
+            <marker date="1573292641623" expanded="true" signature="9058:9101" ph="select * fro... room" />
+            <marker date="1573292641623" expanded="true" signature="10050:10099" ph="select roomN... room" />
+            <marker date="1573292641623" expanded="true" signature="10824:10900" ph="select roomN... room" />
+            <marker date="1573292641623" expanded="true" signature="16035:16270" ph="INSERT INTO systemAdministrator... " />
+            <marker date="1573292641623" expanded="true" signature="18604:18628" ph="select * fro... orderviews" />
+            <marker date="1573292641623" expanded="true" signature="18718:18784" ph="select * fro... orderviews" />
+            <marker date="1573292641623" expanded="true" signature="20752:20978" ph="INSERT INTO room... " />
+            <marker date="1573292641623" expanded="true" signature="21747:21905" ph="select * fro... roomtypeandprice" />
+            <marker date="1573292641623" expanded="true" signature="22040:22163" ph="select * fro... roomtypeandprice" />
+            <marker date="1573292641623" expanded="true" signature="23050:23084" ph="select count... timeextension" />
+            <marker date="1573292641623" expanded="true" signature="23744:23824" ph="update orders... " />
+            <marker date="1573292641623" expanded="true" signature="24259:24478" ph="insert into timeextension... " />
+            <marker date="1573292641623" expanded="true" signature="24968:25023" ph="select roomT... room" />
+            <marker date="1573292641623" expanded="true" signature="25657:25728" ph="update orders... " />
+            <marker date="1573292641623" expanded="true" signature="26203:26275" ph="select * fro... orders" />
+            <marker date="1573292641623" expanded="true" signature="27421:27448" ph="select count... orders" />
+            <marker date="1573292641623" expanded="true" signature="28065:28125" ph="select price... roomtypeandprice" />
+            <marker date="1573292641623" expanded="true" signature="28741:29078" ph="INSERT INTO Customers... " />
+            <marker date="1573292641623" expanded="true" signature="29562:29604" ph="select disco... viplevel" />
+            <marker date="1573292641623" expanded="true" signature="30230:30299" ph="select custo... customers" />
+            <marker date="1573292641623" expanded="true" signature="30960:31013" ph="select * fro... Customers" />
+            <marker date="1573292641623" expanded="true" signature="31649:32211" ph="INSERT INTO orders... " />
+            <marker date="1573292641623" expanded="true" signature="32843:32880" ph="SELECT * FRO... timeExtensionOrdersView" />
+            <marker date="1573292641623" expanded="true" signature="34271:34744" ph="INSERT INTO waiter... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/orderManagement/reservationManage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/roomManagement/roomDisplay.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/orderManagement/allReservations.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="139" column="44" lean-forward="false" selection-start-line="139" selection-start-column="44" selection-end-line="139" selection-end-column="44" />
+        <state relative-caret-position="425">
+          <caret line="131" column="79" lean-forward="false" selection-start-line="131" selection-start-column="61" selection-end-line="131" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/orderManagement/inUseReservations.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="133" column="79" lean-forward="false" selection-start-line="133" selection-start-column="79" selection-end-line="133" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/orderManagement/extendedReservations.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="127" column="56" lean-forward="false" selection-start-line="127" selection-start-column="56" selection-end-line="127" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/orderManagement/completedReservations.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="132" column="79" lean-forward="false" selection-start-line="132" selection-start-column="79" selection-end-line="132" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/OrderManage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="52" lean-forward="false" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/orderManagement/inComingReservations.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="119" column="33" lean-forward="false" selection-start-line="119" selection-start-column="33" selection-end-line="119" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/roomManagement/reservationManage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cancelReservation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="56" column="39" lean-forward="false" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="99" column="40" lean-forward="false" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
           <folding />
         </state>
       </provider>

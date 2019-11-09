@@ -69,7 +69,7 @@
                     v+=('size1='+obj[i].value);
                 }  //如果选中，将value添加到变量v中
             }
-            window.location.href='/roomManagement/roomDisplay.jsp?'+v
+            window.location.href='/roomManagement/reservationDisplay.jsp?'+v
         }
 
         function fun1( equipType,equipID) {
@@ -78,7 +78,7 @@
         }
         function func2() {
             var equipID = document.getElementById('equipID').value
-            window.location.href='/roomManagement/roomDisplay.jsp?search='+equipID
+            window.location.href='/roomManagement/reservationDisplay.jsp?search='+equipID
         }
     </script>
 

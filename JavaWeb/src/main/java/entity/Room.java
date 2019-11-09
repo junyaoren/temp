@@ -26,6 +26,13 @@ public class Room {
         this.remarks = remarks;
     }
 
+    public String toString() {
+        return this.getRoomNumber() + "', '" +
+                this.getRoomType() + "', '" +
+                this.getRoomStatus() + "', '" +
+                this.getRemarks();
+    }
+
     public String getRoomNumber() {
         return roomNumber;
     }
